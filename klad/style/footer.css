@@ -1,0 +1,70 @@
+body {
+  background-color: var(--background);
+  margin: 0px;
+}
+
+/* -- Footer styles -- */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+h3,
+a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+footer a {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+#footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+#footer-content {
+  padding: 8rem 16rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-section-title {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.footer-section-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 160px;
+}
+
+.footer-section-links > a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footer-section-links > a:hover {
+  text-decoration: underline;
+}
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+/*! FOOTER */

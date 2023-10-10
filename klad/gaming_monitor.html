@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Noa Van den Berghe" />
+
+    <meta content="TechNest" property="og:title" />
+    <meta content="Site Description" property="og:description" />
+    <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+    <meta
+      content="https://noavdb.com/webtech/Shop/assets/images/LUminX.jpeg"
+      property="og:image"
+    />
+    <meta content="ff8400" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>LuminX 32-inch White Gaming Monitor - TechNest</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body onload="init()">
+    <!-- NAV -->
+    <div w3-include-html="components/topnav.html"></div>
+    <!-- END NAV -->
+    <!-- START MAIN -->
+    <main class="product">
+      <h1>LuminX 32-inch White Gaming Monitor</h1>
+      <img src="assets/images/LuminX.jpeg" alt="" />
+      <h2>Meeslepend Display</h2>
+      <p>
+        De LuminX 32-inch Gaming Monitor levert een uitgebreid en meeslepend
+        display dat je in het hart van je games trekt. Met een ruim 32-inch
+        scherm zul je games, films en content ervaren zoals nooit tevoren.
+      </p>
+      <h2>Levendige Beelden</h2>
+      <p>
+        Met een hoge resolutie en levendige kleuren zorgt deze monitor ervoor
+        dat elke pixel scherp is en elke tint rijk is. Of je nu fantastische
+        werelden verkent of deelneemt aan competitief gamen, je zult alles zien
+        met ongeëvenaarde helderheid.
+      </p>
+      <h2>RGB-verlichting</h2>
+      <p>
+        Verhoog je game-opstelling met dynamische RGB-verlichting. De
+        LuminX-monitor is versierd met aanpasbare RGB-verlichtingsstrips die
+        langs de randen dansen en een sfeervolle game-omgeving creëren. Kies uit
+        een spectrum van kleuren en dynamische verlichtingseffecten om bij je
+        gamestemming te passen.
+      </p>
+      <h2>Snelle Verversingssnelheid:</h2>
+      <p>
+        Blijf voorop in de competitie met een bliksemsnelle verversingssnelheid
+        en minimale invoervertraging. Of je nu in een snelle shooter zit of een
+        strategiespel speelt, deze monitor houdt gelijke tred met elke beweging,
+        wat zorgt voor een competitief voordeel.
+      </p>
+
+      <h2>Adaptive Sync-technologie:</h2>
+      <p>
+        Zeg vaarwel tegen schermtearing en haperingen. De LuminX-monitor heeft
+        adaptive sync-technologie, zodat je gameplay soepel en scheurvrij
+        blijft, zelfs tijdens intense momenten.
+      </p>
+
+      <h2>Diverse Verbindingsopties:</h2>
+      <p>
+        Verbinding maken is een fluitje van een cent met een reeks poorten,
+        waaronder HDMI, DisplayPort en USB. Sluit met gemak je gameconsole, pc
+        of andere apparaten aan.
+      </p>
+
+      <h2>Strak Wit Ontwerp:</h2>
+      <p>
+        De LuminX Gaming Monitor heeft een smetteloze witte afwerking die er
+        niet alleen prachtig uitziet, maar ook een vleugje moderniteit toevoegt
+        aan je game-opstelling. Het is een stijlvolle toevoeging die elke
+        game-omgeving aanvult.
+      </p>
+
+      <h2>In Hoogte Verstelbare Stand:</h2>
+      <p>
+        Pas je kijkervaring aan met een in hoogte verstelbare standaard. Vind de
+        perfecte ergonomische positie voor lange gamesessies, zowel voor comfort
+        als meeslepende gameplay.
+      </p>
+
+      <h2>Ingebouwde Luidsprekers:</h2>
+      <p>
+        Geniet van game-audio zonder extra hardware. Deze monitor is uitgerust
+        met ingebouwde luidsprekers die helder geluid leveren, waardoor je nog
+        verder in de gamewereld wordt ondergedompeld.
+      </p>
+
+      <h2>Eenvoudige On-Screen Bediening:</h2>
+      <p>
+        Stem je weergave-instellingen eenvoudig af met intuïtieve on-screen
+        bediening. Pas helderheid, contrast en RGB-verlichtingsvoorkeuren aan
+        zonder enige moeite.
+      </p>
+    </main>
+    <!-- END MAIN -->
+    <!-- FOOTER -->
+    <div w3-include-html="components/footer.html"></div>
+
+    <!-- END FOOTER -->
+  </body>
+  <script src="javascript/script.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
+  <script defer>
+    async function init() {
+      await sleep(250);
+
+      // Zet in de sidebar de huidige pagina actief.
+      document.getElementById("luminX").classList.add("active");
+      console.log("Index page heeft de class active gekregen na 250ms");
+    }
+    async function sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+  </script>
+</html>

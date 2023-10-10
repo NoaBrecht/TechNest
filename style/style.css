@@ -1,0 +1,62 @@
+/** author="Noa Van den Berghe" */
+:root {
+  --text: #050d0f;
+  --text-secondary: #ffffff;
+  --background: #fffaeb;
+  --primary: #97a9dd;
+  --secondary: #dfd8f3;
+  --accent: #5f3ec1;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+  display: grid;
+  grid-template:
+    "header header header header header header"
+    "menu main main main main main"
+    "menu footer footer footer footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: menu;
+  padding: 20px 0;
+  background-color: var(--primary);
+  color: var(--text);
+  border-radius: 1rem;
+}
+main {
+  grid-area: main;
+  text-align: justify;
+}
+footer {
+  grid-area: footer;
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  color: var(--primary);
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  color: var(--accent);
+}
