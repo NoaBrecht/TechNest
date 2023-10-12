@@ -49,7 +49,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  height: 79vh;
+  height: 98%;
 }
 
 nav ul li {
