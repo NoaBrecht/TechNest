@@ -228,6 +228,16 @@ input[type="submit"] {
   text-align: center;
   padding: 5rem;
 }
+.about h1,
+h2 {
+  text-align: center;
+  padding: 1rem;
+}
+.about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* .about {
   display: flex;
   justify-content: center;
