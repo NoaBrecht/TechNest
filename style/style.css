@@ -212,3 +212,14 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--background);
+  background: var(--secondary);
+}
+
+::selection {
+  color: var(--background);
+  background: var(--secondary);
+}
