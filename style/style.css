@@ -129,8 +129,10 @@ img {
   /* Voeg wat binnenruimte toe voor de inhoud van de kaart */
   max-width: 500px;
   /* Verhoog de maximale breedte */
-  width: 22vw;
   /* Zorg ervoor dat de kaarten de beschikbare breedte vullen */
+}
+.shop .card {
+  width: 22vw;
 }
 
 .price {
@@ -227,6 +229,7 @@ input[type="submit"] {
 .about p {
   text-align: center;
   padding: 5rem;
+  word-wrap: break-word;
 }
 .about h1,
 h2 {
@@ -238,7 +241,3 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-/* .about {
-  display: flex;
-  justify-content: center;
-} */
