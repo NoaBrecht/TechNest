@@ -5,58 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Noa Van den Berghe" />
 
-    <title>template</title>
+    <title>Producten</title>
     <link rel="stylesheet" href="style/reset.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="icon" type="image/x-icon" href="assets/logo/default.png" />
 
     <link rel="stylesheet" href="style/style.css" />
   </head>
+
   <body>
-    <header></header>
+    <header>
+      <p>TechNest</p>
+    </header>
     <nav>
       <ul>
         <li>
-          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="index.html"
+            ><i class="fa-solid fa-house"></i><span>Home</span></a
+          >
         </li>
         <li>
           <a href="index.html#about"
-            ><i class="fa-solid fa-info"></i> Over ons</a
+            ><i class="fa-solid fa-info"></i><span>Over ons</span></a
+          >
+        </li>
+        <li class="active">
+          <a href="shop.html"
+            ><i class="fa-solid fa-box"></i><span>Onze producten</span></a
           >
         </li>
         <li>
-          <a href="producten.html"
-            ><i class="fa-solid fa-box"></i> Onze producten</a
+          <a href="#about"
+            ><i class="fas fa-cart-shopping"></i><span>Winkelmandje</span></a
           >
         </li>
       </ul>
-
-      <a href="#about"><i class="fas fa-cart-shopping"></i> Winkelmandje</a>
     </nav>
     <main>
-      <h1>Onze producten</h1>
-      <h2>Computers</h2>
-      <a href="#">SPECTRAFROST X1 GAMING LAPTOP </a>
-      <a href="#">SPECTRAFROST Swiftlite Ultrabook</a>
-      <a href="#">SPECTRAFROST EcoWoodElite Desktop PC</a>
+      <section class="products">
+        <article class="card">
+          <h1>SPECTRAFROST Swiftlite Ultrabook</h1>
+          <img
+            src="assets/images/SpectraFrost Ultrabook.jpeg"
+            alt="SpectraFrost Ultrabook"
+          />
 
-      <h2>Accesoires</h2>
-      <a href="#">OnyxJet Pro Draadloze Kleurenprinter </a>
-      <a href="#">StealthGlide Black Wireless Mouse</a>
-      <a href="#">PureTone Stereo PC Speakers</a>
-      <a href="gaming_monitor.html">LuminX 32-inch White Gaming Monitor</a>
-      <a href="#">EcoView Essentials Office Monitor</a>
-      <a href="#">AmethystGrip Purple Game Controller</a>
-      <a href="#">CRYSTALVIEW CineMaster Pro Video Camera</a>
+          <p class="price">Starting at €1259</p>
+          <p>
+            Maak kennis met de SPECTRAFROST Swiftlite Ultrabook - waar
+            betaalbaarheid samengaat met draagbaarheid.
+          </p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="card">
+          <h1>SPECTRAFROST EcoWoodElite Desktop PC</h1>
 
-      <h2>Gaming</h2>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+          <img
+            src="assets/images/EcoWood.jpeg"
+            alt="SPECTRAFROST EcoWoodElite Desktop PC"
+          />
+          <p class="price">€5469</p>
+          <p>
+            Maak kennis met de SPECTRAFROST EcoWoodElite Desktop PC - waar rauwe
+            kracht samengaat met tijdloze elegantie in een fusie van technologie
+            en natuur.
+          </p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="card">
+          <h1>LuminX 32-inch White Gaming Monitor</h1>
+
+          <a href="gaming_monitor.html"
+            ><img
+              src="assets/images/LuminX.jpeg"
+              alt="LuminX 32-inch White Gaming Monitor"
+          /></a>
+          <p class="price">€1480</p>
+          <p>
+            Maak kennis met de LuminX 32-inch White Gaming Monitor - waar
+            formaat, stijl en RGB-verlichting samenkomen om je game-ervaring
+            opnieuw te definiëren.
+          </p>
+          <button>Add to Cart</button>
+        </article>
+      </section>
+      <section class="about" id="about"></section>
     </main>
-    <footer></footer>
+    <footer>
+      <a href="contact.html">Contact</a>
+    </footer>
   </body>
   <script src="javascript/script.js"></script>
 </html>
