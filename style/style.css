@@ -29,11 +29,13 @@ header {
 }
 nav {
   grid-area: menu;
+  width: fit-content;
   padding: 20px 0;
   background-color: var(--primary);
-  color: var(--text);
+  color: var(--text-secondary);
   border-radius: 1rem;
 }
+
 main {
   grid-area: main;
   text-align: justify;
@@ -59,4 +61,76 @@ h2 {
   padding: 0;
   font-weight: bolder;
   color: var(--accent);
+}
+img {
+  border-radius: 2rem;
+  height: 50rem;
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--text-secondary);
+  background-color: var(--accent);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+
+  font-size: 18px;
+  bottom: 0;
+}
+button:hover {
+  opacity: 0.7;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 1rem; /* Voeg marge toe tussen de kaarten */
+  text-align: center;
+  font-family: arial;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px; /* Voeg wat binnenruimte toe voor de inhoud van de kaart */
+  max-width: 500px; /* Verhoog de maximale breedte */
+  width: 100%; /* Zorg ervoor dat de kaarten de beschikbare breedte vullen */
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card img {
+  border-radius: 15%;
+  max-width: 100%;
+  height: auto;
+}
+.card h1 {
+  font-size: 1.8rem;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  border-radius: 1rem;
+  padding: 20px;
+  text-align: center;
+}
+header {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  border-radius: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 100%;
+  text-align: center;
+}
+header h1 {
+  color: var(--text-secondary);
 }
