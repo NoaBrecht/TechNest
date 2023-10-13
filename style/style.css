@@ -131,6 +131,7 @@ img {
   /* Verhoog de maximale breedte */
   /* Zorg ervoor dat de kaarten de beschikbare breedte vullen */
 }
+
 .shop .card {
   width: 22vw;
 }
@@ -183,9 +184,11 @@ footer {
   font-size: 2rem;
   font-weight: bold;
 }
+
 footer a {
   color: var(--text-secondary);
 }
+
 nav .active {
   border: 2px solid blue;
   opacity: 0.8;
@@ -231,17 +234,42 @@ input[type="submit"] {
   padding: 5rem;
   word-wrap: break-word;
 }
+
 .about h1,
 h2 {
   text-align: center;
   padding: 1rem;
 }
+
 .about img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-max-width: 100%;
+  max-width: 100%;
   height: auto;
+}
 
+main .imgtextbtn {
+  display: flex;
+  flex-direction: row;
+}
 
+main .imgtextbtn:nth-child(2) .text {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+main .imgtextbtn:nth-child(2) p {
+  color: black;
+  font-size: 1rem;
+}
+
+main .imgtextbtn:nth-child(2) button {
+  background-color: var(--accent);
+  color: var(--text-secondary);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 6vh;
 }
