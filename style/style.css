@@ -249,22 +249,22 @@ h2 {
   height: auto;
 }
 
-main .imgtextbtn {
+.imgtextbtn {
   display: flex;
   flex-direction: row;
 }
 
-main .imgtextbtn:nth-child(2) .text {
+.imgtextbtn:nth-child(2) .text {
   padding-left: 2vw;
   padding-right: 2vw;
 }
 
-main .imgtextbtn:nth-child(2) p {
+.imgtextbtn:nth-child(2) p {
   color: black;
   font-size: 1rem;
 }
 
-main .imgtextbtn:nth-child(2) button {
+.imgtextbtn:nth-child(2) button {
   background-color: var(--accent);
   color: var(--text-secondary);
   padding: 12px 20px;
@@ -272,4 +272,24 @@ main .imgtextbtn:nth-child(2) button {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 6vh;
+}
+
+.imgtextbtn button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--text-secondary);
+  background-color: var(--accent);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
