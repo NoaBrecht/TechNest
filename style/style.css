@@ -354,4 +354,7 @@ h2 {
     background-color: var(--background);
     border: none;
   }
+  nav ul li {
+    text-align: center;
+  }
 }
