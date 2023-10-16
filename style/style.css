@@ -288,8 +288,60 @@ h2 {
   padding: 0.5rem 3rem;
   word-wrap: break-word;
 }
+@media only screen and (min-width: 720px) {
+  .hamburger,
+  .close {
+    display: none;
+  }
+}
 @media only screen and (max-width: 720px) {
   .card {
     max-width: 100%;
+  }
+
+  .hamburger {
+    position: fixed;
+    /* a large z-index puts the ham button above the rest of the page*/
+    z-index: 99;
+    background: white;
+    border: none;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .menu {
+    position: fixed;
+    /* give the menu a larger z-index than the ham link
+  to put the menu above it */
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    /* basic menu styling*/
+    list-style: none;
+    background: var(--primary);
+    display: flex;
+
+    flex-direction: column;
+    /* animate slide up/down */
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+
+  .close {
+    position: absolute;
+    border: none;
+    color: white;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+  }
+  .menu:target {
+    /* show menu */
+    transform: translateY(0);
   }
 }

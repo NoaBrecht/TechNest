@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <meta
       name="description"
       content="Welkom bij TechNest - Ontdek onze nieuwste producten, waaronder de SPECTRAFROST Swiftlite Ultrabook, SPECTRAFROST EcoWoodElite Desktop PC, en de LuminX 32-inch White Gaming Monitor."
@@ -31,7 +36,7 @@
       <p>TechNest</p>
     </header>
     <nav>
-      <ul>
+      <ul class="menu" id="menu">
         <li class="active">
           <a href="index.html"
             ><i class="fa-solid fa-house"></i><span>Home</span></a
@@ -52,9 +57,15 @@
             ><i class="fas fa-cart-shopping"></i><span>Winkelmandje</span></a
           >
         </li>
+        <a class="close" href="#">
+          <span class="material-icons"> close </span>
+        </a>
       </ul>
     </nav>
     <main>
+      <a class="hamburger" href="#menu">
+        <span class="material-icons"> menu </span>
+      </a>
       <section class="products">
         <article class="card">
           <h1>SPECTRAFROST Swiftlite Ultrabook</h1>
