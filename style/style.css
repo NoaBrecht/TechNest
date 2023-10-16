@@ -40,7 +40,6 @@ header {
 
 nav {
   grid-area: menu;
-  width: fit-content;
   padding: 20px 0;
   background-color: var(--primary);
   color: var(--text-secondary);
@@ -288,4 +287,9 @@ h2 {
   text-align: center;
   padding: 0.5rem 3rem;
   word-wrap: break-word;
+}
+@media only screen and (max-width: 720px) {
+  .card {
+    max-width: 100%;
+  }
 }
