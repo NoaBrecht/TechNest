@@ -104,7 +104,9 @@ h2 {
 
 img {
   border-radius: 2rem;
-  height: 50rem;
+  max-height: 50rem;
+  height: auto;
+  width: auto;
 }
 
 .products {
@@ -303,7 +305,7 @@ h2 {
     position: fixed;
     /* a large z-index puts the ham button above the rest of the page*/
     z-index: 99;
-    background: white;
+    color: white;
     border: none;
     cursor: pointer;
     top: 1rem;
@@ -343,5 +345,13 @@ h2 {
   .menu:target {
     /* show menu */
     transform: translateY(0);
+  }
+  .imgtextbtn {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    background-color: var(--background);
+    border: none;
   }
 }
