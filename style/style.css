@@ -285,22 +285,26 @@ h2 {
 .card button:hover {
   opacity: 0.7;
 }
+
 .product-info p {
   text-align: center;
   padding: 0.5rem 3rem;
   word-wrap: break-word;
 }
+
 @media only screen and (min-width: 720px) {
   .hamburger,
   .close {
     display: none;
   }
 }
+
 @media screen and (max-width: 1385px) {
   .card {
     max-width: 100%;
   }
 }
+
 @media only screen and (max-width: 720px) {
   .card {
     max-width: 100%;
@@ -342,17 +346,21 @@ h2 {
     top: 1rem;
     right: 1rem;
   }
+
   .menu:target {
     /* show menu */
     transform: translateY(0);
   }
+
   .imgtextbtn {
     display: flex;
     flex-direction: column;
   }
+
   nav {
     border: none;
   }
+
   nav ul li {
     text-align: center;
   }
