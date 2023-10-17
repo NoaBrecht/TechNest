@@ -15,7 +15,7 @@
   <title>LuminX 32-inch White Gaming Monitor</title>
   <link rel="stylesheet" href="style/reset.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="style/style.css" />
 </head>
 
@@ -24,22 +24,28 @@
     <p>TechNest</p>
   </header>
   <nav>
-    <ul>
+    <ul class="menu" id="menu">
       <li>
         <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
       </li>
       <li>
         <a href="index.html#about"><i class="fa-solid fa-info"></i><span>Over ons</span></a>
       </li>
-      <li>
+      <li class="active">
         <a href="shop.html"><i class="fa-solid fa-box"></i><span>Onze producten</span></a>
       </li>
       <li>
         <a href="#about"><i class="fas fa-cart-shopping"></i><span>Winkelmandje</span></a>
       </li>
+      <a class="close" href="#">
+        <span class="material-icons"> close </span>
+      </a>
     </ul>
   </nav>
   <main>
+    <a class="hamburger" href="#menu">
+      <span class="material-icons"> menu </span>
+    </a>
     <h1>LuminX 32-inch White Gaming Monitor</h1>
     <section class="imgtextbtn">
       <article><img src="assets/images/LuminX.jpeg" alt="" /></article>

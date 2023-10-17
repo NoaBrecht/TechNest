@@ -18,8 +18,8 @@
     <p>TechNest</p>
   </header>
   <nav>
-    <ul>
-      <li class="active">
+    <ul class="menu" id="menu">
+      <li>
         <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
       </li>
       <li>
@@ -31,9 +31,15 @@
       <li>
         <a href="#about"><i class="fas fa-cart-shopping"></i><span>Winkelmandje</span></a>
       </li>
+      <a class="close" href="#">
+        <span class="material-icons"> close </span>
+      </a>
     </ul>
   </nav>
   <main>
+    <a class="hamburger" href="#menu">
+      <span class="material-icons"> menu </span>
+    </a>
     <form action="">
       <label for="fname">Voornaam</label>
       <input type="text" id="fname" name="firstname" placeholder="Voornaam" required />
