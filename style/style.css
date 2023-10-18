@@ -133,10 +133,6 @@ img {
   /* Zorg ervoor dat de kaarten de beschikbare breedte vullen */
 }
 
-.shop .card {
-  width: 22vw;
-}
-
 .price {
   color: grey;
   font-size: 22px;
@@ -297,6 +293,9 @@ h2 {
   .close {
     display: none;
   }
+  .card {
+    width: 22vw;
+  }
 }
 
 @media screen and (max-width: 1385px) {
@@ -306,10 +305,6 @@ h2 {
 }
 
 @media only screen and (max-width: 720px) {
-  .card {
-    max-width: 100%;
-  }
-
   .hamburger {
     position: fixed;
     /* a large z-index puts the ham button above the rest of the page*/
@@ -363,5 +358,12 @@ h2 {
 
   nav ul li {
     text-align: center;
+  }
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    width: auto;
   }
 }
