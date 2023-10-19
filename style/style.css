@@ -59,6 +59,10 @@ nav ul li {
   padding: 1vh;
   cursor: pointer;
 }
+nav ul li .onzichtbaar {
+  border: none;
+  background-color: none;
+}
 
 nav ul li a {
   color: white;
@@ -276,6 +280,13 @@ h2 {
   margin-bottom: 0;
   margin-top: 6vh;
 }
+.imgtextbtn button.button-secondary {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
 
 .card button:hover {
   opacity: 0.7;
@@ -366,7 +377,7 @@ h2 {
   }
 }
 
-.review .author {
+.reviews .author {
   font-style: italic;
   margin-top: 10px;
   font-size: 1rem;
