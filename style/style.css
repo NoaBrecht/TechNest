@@ -48,7 +48,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  height: 98%;
 }
 
 nav ul li {
@@ -378,10 +377,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.stars {
-  margin: auto;
-  padding-bottom: 0;
-}
+
 .active-star {
   color: var(--accent);
 }
