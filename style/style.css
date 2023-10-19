@@ -257,7 +257,7 @@ h2 {
 }
 
 .imgtextbtn p {
-  color: black;
+  color: var(--text);
   font-size: 1rem;
 }
 
