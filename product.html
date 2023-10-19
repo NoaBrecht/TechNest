@@ -33,6 +33,12 @@
       <li>
         <a href="#about"><i class="fas fa-cart-shopping"></i><span>Winkelmandje</span></a>
       </li>
+      <li>
+        <form class="search">
+          <input type="search" placeholder="Zoek een product">
+          <input type="submit" value="Search" />
+        </form>
+      </li>
       <a class="close" href="#">
         <i class="fa-solid fa-xmark"></i>
       </a>
@@ -72,7 +78,7 @@
           Nam pretium turpis mauris, eget dictum quam luctus vel.<br />
           <span class="price">&euro;1480</span>
           <button>Voeg toe aan Winkelmandje</button>
-          <button class="button-secondary"><i class="fa-regular fa-heart text-secondary"></i> Wishlist</button>
+          <button class="button-wishlist"><i class="fa-regular fa-heart text-secondary"></i> Wishlist</button>
         </p>
       </article>
     </section>
@@ -183,7 +189,7 @@
       </article>
       <form action="">
         <label for="name">Naam</label>
-        <input type="text" id="name" name="name" placeholder="Voornaam" required />
+        <input type="text" id="name" name="name" placeholder="Naam" required />
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="email@domain.com" required />
         <label for="subject">Bericht </label>

@@ -217,6 +217,21 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: var(--text-secondary);
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -280,9 +295,21 @@ h2 {
   margin-bottom: 0;
   margin-top: 6vh;
 }
-.imgtextbtn button.button-secondary {
-  background-color: var(--secondary);
+.imgtextbtn button.button-wishlist {
+  border: none;
+  outline: 0;
+  padding: 0.75rem 1.25rem;
   color: var(--text);
+  background-color: var(--primary);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 6vh;
 }
 .text-secondary {
   color: var(--text-secondary);
