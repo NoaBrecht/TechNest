@@ -307,7 +307,6 @@ h2 {
 @media only screen and (max-width: 720px) {
   .hamburger {
     position: fixed;
-    /* a large z-index puts the ham button above the rest of the page*/
     z-index: 99;
     color: white;
     border: none;
@@ -366,4 +365,23 @@ h2 {
   .card {
     width: auto;
   }
+}
+
+.review .author {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stars {
+  margin: auto;
+  padding-bottom: 0;
+}
+.active-star {
+  color: var(--accent);
 }
