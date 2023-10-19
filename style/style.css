@@ -65,7 +65,7 @@ nav ul li .onzichtbaar {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--text-secondary);
 }
 
 nav ul li a i {
@@ -73,7 +73,7 @@ nav ul li a i {
 }
 
 nav ul li:hover {
-  border: 2px solid white;
+  border: 2px solid var(--text-secondary);
   opacity: 0.8;
   transition-duration: 0.2s;
   transform: scale(1.03);
@@ -119,7 +119,7 @@ img {
 }
 
 .card {
-  background-color: white;
+  background-color: var(--text-secondary);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 1rem;
   /* Voeg marge toe tussen de kaarten */
@@ -345,7 +345,7 @@ h2 {
   .hamburger {
     position: fixed;
     z-index: 99;
-    color: white;
+    color: var(--text-secondary);
     border: none;
     cursor: pointer;
     top: 1rem;
@@ -372,7 +372,7 @@ h2 {
   .close {
     position: absolute;
     border: none;
-    color: white;
+    color: var(--text-secondary);
     cursor: pointer;
     top: 1rem;
     right: 1rem;
