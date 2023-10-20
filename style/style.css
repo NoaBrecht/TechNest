@@ -6,7 +6,22 @@
   --primary: #97a9dd;
   --secondary: #dfd8f3;
   --accent: #5f3ec1;
+  --nav-border: #007ecc;
+  --active: blue;
 }
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffffff;
+    --text-secondary: #050d0f;
+    --background: #fef7ea;
+
+    --primary: #97a9dd;
+    --secondary: #dfd8f3;
+    --accent: #5f3ec1;
+    --nav-border: #007ecc;
+    --active: blue;
+  }
+} */
 
 body {
   background-color: var(--background);
@@ -28,7 +43,7 @@ header {
   grid-area: header;
   background-color: var(--primary);
   color: var(--text-secondary);
-  border: 2px solid rgb(0, 126, 204);
+  border: 2px solid var(--nav-border);
   border-radius: 1rem;
   padding: 2vh;
 
@@ -43,7 +58,7 @@ nav {
   padding: 20px 0;
   background-color: var(--primary);
   color: var(--text-secondary);
-  border: 2px solid rgb(0, 126, 204);
+  border: 2px solid var(--nav-border);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -175,7 +190,7 @@ footer {
   grid-area: footer;
   background-color: var(--primary);
   color: var(--text-secondary);
-  border: 2px solid rgb(0, 126, 204);
+  border: 2px solid var(--nav-border);
   border-radius: 1rem;
   padding: 1.5vh;
 
@@ -190,7 +205,7 @@ footer a {
 }
 
 nav .active {
-  border: 2px solid blue;
+  border: 2px solid var(--active);
   opacity: 0.8;
 }
 
