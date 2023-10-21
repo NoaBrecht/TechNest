@@ -19,7 +19,7 @@
     --secondary: #dfd8f3;
     --accent: #5f3ec1;
     --nav-border: #007ecc;
-    --active: blue;
+    --active: darkblue;
   }
 } */
 
@@ -150,22 +150,18 @@ img {
   /* Verhoog de maximale breedte */
   /* Zorg ervoor dat de kaarten de beschikbare breedte vullen */
 }
-
 .price {
   color: grey;
   font-size: 22px;
 }
-
 .card img {
   border-radius: 15%;
   max-width: 100%;
   height: auto;
 }
-
 .card h1 {
   font-size: 1.6rem;
 }
-
 .card button {
   border: none;
   outline: 0;
@@ -181,11 +177,9 @@ img {
   margin: auto;
   margin-bottom: 0;
 }
-
 .card button:hover {
   opacity: 0.7;
 }
-
 footer {
   grid-area: footer;
   background-color: var(--primary);
@@ -193,22 +187,18 @@ footer {
   border: 2px solid var(--nav-border);
   border-radius: 1rem;
   padding: 1.5vh;
-
   width: auto;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
-
 footer a {
   color: var(--text-secondary);
 }
-
 nav .active {
   border: 2px solid var(--active);
   opacity: 0.8;
 }
-
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 input[type="email"],
@@ -216,14 +206,13 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: none;
 }
-
 input[type="submit"] {
   background-color: var(--accent);
   color: var(--text-secondary);
@@ -243,34 +232,28 @@ input[type="search"] {
   border-radius: inherit;
   color: var(--text-secondary);
 }
-
 input[type="search"]::placeholder {
   color: #bbb;
 }
-
 ::-moz-selection {
   /* Code for Firefox */
   color: var(--text);
   background: var(--secondary);
 }
-
 ::selection {
   color: var(--text);
   background: var(--secondary);
 }
-
 .about p {
   text-align: center;
   padding: 5rem;
   word-wrap: break-word;
 }
-
 .about h1,
 h2 {
   text-align: center;
   padding: 1rem;
 }
-
 .about img {
   display: block;
   margin-left: auto;
@@ -278,22 +261,18 @@ h2 {
   max-width: 100%;
   height: auto;
 }
-
 .imgtextbtn {
   display: flex;
   flex-direction: row;
 }
-
 .imgtextbtn .text {
   padding-left: 2vw;
   padding-right: 2vw;
 }
-
 .imgtextbtn p {
   color: var(--text);
   font-size: 1rem;
 }
-
 .imgtextbtn button {
   border: none;
   outline: 0;
@@ -329,17 +308,14 @@ h2 {
 .text-secondary {
   color: var(--text-secondary);
 }
-
 .card button:hover {
   opacity: 0.7;
 }
-
 .product-info p {
   text-align: center;
   padding: 0.5rem 3rem;
   word-wrap: break-word;
 }
-
 @media only screen and (min-width: 720px) {
   .hamburger,
   .close {
@@ -349,13 +325,11 @@ h2 {
     width: 22vw;
   }
 }
-
 @media screen and (max-width: 1385px) {
   .card {
     max-width: 100%;
   }
 }
-
 @media only screen and (max-width: 720px) {
   .hamburger {
     position: fixed;
@@ -366,7 +340,6 @@ h2 {
     top: 1rem;
     right: 1rem;
   }
-
   .menu {
     position: fixed;
     z-index: 100;
@@ -383,7 +356,6 @@ h2 {
     transform: translateY(-100%);
     transition: transform 0.2s ease;
   }
-
   .close {
     position: absolute;
     border: none;
@@ -392,21 +364,17 @@ h2 {
     top: 1rem;
     right: 1rem;
   }
-
   .menu:target {
     /* show menu */
     transform: translateY(0);
   }
-
   .imgtextbtn {
     display: flex;
     flex-direction: column;
   }
-
   nav {
     border: none;
   }
-
   nav ul li {
     text-align: center;
   }
@@ -418,7 +386,6 @@ h2 {
     width: auto;
   }
 }
-
 .reviews .author {
   font-style: italic;
   margin-top: 10px;
@@ -430,7 +397,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .active-star {
   color: var(--accent);
 }
