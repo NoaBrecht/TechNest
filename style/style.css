@@ -74,10 +74,6 @@ nav ul li {
   padding: 1vh;
   cursor: pointer;
 }
-nav ul li .onzichtbaar {
-  border: none;
-  background-color: none;
-}
 
 nav ul li a {
   color: var(--text-secondary);
@@ -176,9 +172,6 @@ img {
   font-size: 18px;
   margin: auto;
   margin-bottom: 0;
-}
-.card button:hover {
-  opacity: 0.7;
 }
 footer {
   grid-area: footer;
@@ -310,6 +303,8 @@ h2 {
 }
 .card button:hover {
   opacity: 0.7;
+  transition-duration: 0.2s;
+  transform: scale(1.03);
 }
 .product-info p {
   text-align: center;
