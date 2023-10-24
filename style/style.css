@@ -228,11 +228,7 @@ input[type="search"] {
 input[type="search"]::placeholder {
   color: #bbb;
 }
-::-moz-selection {
-  /* Code for Firefox */
-  color: var(--text);
-  background: var(--secondary);
-}
+::-moz-selection,
 ::selection {
   color: var(--text);
   background: var(--secondary);
