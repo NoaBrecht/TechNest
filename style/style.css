@@ -307,6 +307,21 @@ h2 {
   padding: 0.5rem 3rem;
   word-wrap: break-word;
 }
+.reviews .author {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.active-star {
+  color: var(--accent);
+}
+
 @media only screen and (min-width: 720px) {
   .hamburger,
   .close {
@@ -376,18 +391,4 @@ h2 {
   .card {
     width: auto;
   }
-}
-.reviews .author {
-  font-style: italic;
-  margin-top: 10px;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-.reviews {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.active-star {
-  color: var(--accent);
 }
