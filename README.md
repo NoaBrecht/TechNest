@@ -1,5 +1,6 @@
 # TechNest
 
+![Logo](https://noavdb.com/webtech/TechNest/assets/logo/cover.png)
 Taak voor AP Hogeschool
 
 ## Authors
