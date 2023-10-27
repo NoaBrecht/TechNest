@@ -215,7 +215,10 @@ input[type="search"] {
 input[type="search"]::placeholder {
   color: #bbb;
 }
-::-moz-selection,
+::-moz-selection {
+  color: var(--text);
+  background: var(--secondary);
+}
 ::selection {
   color: var(--text);
   background: var(--secondary);
@@ -377,4 +380,8 @@ h2 {
   .card {
     width: auto;
   }
+}
+#map {
+  height: 80vh;
+  border-radius: 1rem;
 }
