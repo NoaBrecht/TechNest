@@ -12,7 +12,6 @@ Taak voor AP Hogeschool
 
 Clone the project
 
-```bash
-  git clone https://github.com/NoaBrecht/TechNest
+```bash git clone https://github.com/NoaBrecht/TechNest
 
 ```
