@@ -62,6 +62,18 @@ nav {
   flex-direction: column;
   justify-content: left;
 }
+/* Aside indien nodig */
+aside {
+  grid-area: aside;
+  padding: 20px 0;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  border: 2px solid var(--nav-border);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
 nav ul li {
   display: block;
   border-radius: 10px;
