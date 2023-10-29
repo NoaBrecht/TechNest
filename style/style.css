@@ -166,7 +166,7 @@ img {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 4px;
 
   font-size: 18px;
   margin: auto;
@@ -210,7 +210,7 @@ input[type="submit"] {
   color: var(--text-secondary);
   padding: 12px 20px;
   border: none;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   cursor: pointer;
 }
 input[type="search"] {
@@ -221,7 +221,7 @@ input[type="search"] {
   font-size: 14px;
   color: inherit;
   border: 1px solid transparent;
-  border-radius: inherit;
+  border-radius: 4px;
   color: var(--text-secondary);
 }
 input[type="search"]::placeholder {
