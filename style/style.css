@@ -1,17 +1,24 @@
 /** author="Noa Van den Berghe" */
 :root {
-  /** text colors */
+  /** text colours */
   --text: #050d0f;
   --text-secondary: #ffffff;
-  /** background colors */
+  /** background colours */
   --background: #fffaeb;
-  /** brand colors */
+  /** brand colours */
   --primary: #97a9dd;
   --secondary: #dfd8f3;
   --accent: #5f3ec1;
   /** borders en elementen */
   --nav-border: #007ecc;
   --active: blue;
+  /*
+  * Supporting colours
+  ! Nog niet gebruikt */
+  --success: #81c784;
+  --warning: #f2a365;
+  --danger: #e57373;
+  --info: #66b5f5;
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
