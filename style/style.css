@@ -1,11 +1,15 @@
 /** author="Noa Van den Berghe" */
 :root {
+  /** text colors */
   --text: #050d0f;
   --text-secondary: #ffffff;
+  /** background colors */
   --background: #fffaeb;
+  /** brand colors */
   --primary: #97a9dd;
   --secondary: #dfd8f3;
   --accent: #5f3ec1;
+  /** borders en elementen */
   --nav-border: #007ecc;
   --active: blue;
 }
@@ -22,7 +26,6 @@
     --active: darkblue;
   }
 } */
-
 body {
   background-color: var(--background);
   color: var(--text);
@@ -62,18 +65,7 @@ nav {
   flex-direction: column;
   justify-content: left;
 }
-/* Aside indien nodig */
-aside {
-  grid-area: aside;
-  padding: 20px 0;
-  background-color: var(--primary);
-  color: var(--text-secondary);
-  border: 2px solid var(--nav-border);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
+/*TODO Aside indien nodig */
 nav ul li {
   display: block;
   border-radius: 10px;
@@ -94,6 +86,21 @@ nav ul li:hover {
   opacity: 0.8;
   transition-duration: 0.2s;
   transform: scale(1.03);
+}
+nav .active {
+  border: 2px solid var(--active);
+  opacity: 0.8;
+}
+aside {
+  grid-area: aside;
+  padding: 20px 0;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  border: 2px solid var(--nav-border);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 main {
   grid-area: main;
@@ -172,26 +179,7 @@ img {
   margin: auto;
   margin-bottom: 0;
 }
-footer {
-  grid-area: footer;
-  background-color: var(--primary);
-  color: var(--text-secondary);
-  border: 2px solid var(--nav-border);
-  border-radius: 1rem;
-  padding: 1.5vh;
-  width: auto;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
-footer a {
-  color: var(--text-secondary);
-}
-nav .active {
-  border: 2px solid var(--active);
-  opacity: 0.8;
-}
-/* Style inputs with type="text", select elements and textareas */
+/** Style inputs with type="text", select elements and textareas */
 input[type="text"],
 input[type="email"],
 select,
@@ -323,6 +311,25 @@ h2 {
 .active-star {
   color: var(--accent);
 }
+#map {
+  height: 80vh;
+  border-radius: 1rem;
+}
+footer {
+  grid-area: footer;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  border: 2px solid var(--nav-border);
+  border-radius: 1rem;
+  padding: 1.5vh;
+  width: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+footer a {
+  color: var(--text-secondary);
+}
 @media only screen and (min-width: 720px) {
   .hamburger,
   .close {
@@ -392,8 +399,4 @@ h2 {
   .card {
     width: auto;
   }
-}
-#map {
-  height: 80vh;
-  border-radius: 1rem;
 }
