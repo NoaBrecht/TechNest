@@ -72,7 +72,17 @@ nav {
   flex-direction: column;
   justify-content: left;
 }
-/*TODO Aside indien nodig */
+aside {
+  grid-area: aside;
+  padding: 20px 0;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  border: 2px solid var(--nav-border);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
 nav ul li {
   display: block;
   border-radius: 10px;
@@ -97,17 +107,6 @@ nav ul li:hover {
 nav .active {
   border: 2px solid var(--active);
   opacity: 0.8;
-}
-aside {
-  grid-area: aside;
-  padding: 20px 0;
-  background-color: var(--primary);
-  color: var(--text-secondary);
-  border: 2px solid var(--nav-border);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
 }
 main {
   grid-area: main;
@@ -407,7 +406,6 @@ footer a {
     width: auto;
   }
 }
-
 .danger {
   background-color: var(--danger);
   color: var(--text-secondary);
