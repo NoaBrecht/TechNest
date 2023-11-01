@@ -407,3 +407,20 @@ footer a {
     width: auto;
   }
 }
+
+.danger {
+  background-color: var(--danger);
+  color: var(--text-secondary);
+}
+.success {
+  background-color: var(--success);
+  color: var(--text-secondary);
+}
+.warning {
+  background-color: var(--warning);
+  color: var(--text-secondary);
+}
+.info {
+  background-color: var(--info);
+  color: var(--text-secondary);
+}
