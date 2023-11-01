@@ -20,6 +20,7 @@
   --danger: #e57373;
   --info: #66b5f5;
 }
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --text: #ffffff;
@@ -48,6 +49,7 @@ body {
   grid-gap: 10px;
   padding: 10px;
 }
+
 header {
   grid-area: header;
   background-color: var(--primary);
@@ -61,6 +63,7 @@ header {
   font-size: 2rem;
   font-weight: bold;
 }
+
 nav {
   grid-area: menu;
   padding: 20px 0;
@@ -72,6 +75,7 @@ nav {
   flex-direction: column;
   justify-content: left;
 }
+
 aside {
   grid-area: aside;
   padding: 20px 0;
@@ -83,6 +87,7 @@ aside {
   flex-direction: column;
   justify-content: left;
 }
+
 nav ul li {
   display: block;
   border-radius: 10px;
@@ -92,30 +97,37 @@ nav ul li {
   padding: 1vh;
   cursor: pointer;
 }
-nav ul li a {
+
+nav ul a li {
   color: var(--text-secondary);
 }
-nav ul li a i {
+
+nav ul a li i {
   padding: 1vh;
 }
+
 nav ul li:hover {
   border: 2px solid var(--text-secondary);
   opacity: 0.8;
   transition-duration: 0.2s;
   transform: scale(1.03);
 }
+
 nav .active {
   border: 2px solid var(--active);
   opacity: 0.8;
 }
+
 main {
   grid-area: main;
   text-align: justify;
 }
+
 a {
   text-decoration: none;
   color: var(--text);
 }
+
 h1 {
   font-size: 2rem;
   margin: 0;
@@ -123,6 +135,7 @@ h1 {
   font-weight: bolder;
   color: var(--primary);
 }
+
 h2 {
   font-size: 1.5rem;
   margin: 0;
@@ -130,17 +143,20 @@ h2 {
   font-weight: bolder;
   color: var(--accent);
 }
+
 img {
   border-radius: 2rem;
   max-height: 50rem;
   height: auto;
   width: auto;
 }
+
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   background-color: var(--text-secondary);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -158,18 +174,22 @@ img {
   /* Verhoog de maximale breedte */
   /* Zorg ervoor dat de kaarten de beschikbare breedte vullen */
 }
+
 .price {
   color: grey;
   font-size: 22px;
 }
+
 .card img {
   border-radius: 15%;
   max-width: 100%;
   height: auto;
 }
+
 .card h1 {
   font-size: 1.6rem;
 }
+
 .card button {
   border: none;
   outline: 0;
@@ -185,6 +205,7 @@ img {
   margin: auto;
   margin-bottom: 0;
 }
+
 /** Style inputs with type="text", select elements and textareas */
 input[type="text"],
 input[type="email"],
@@ -199,6 +220,7 @@ textarea {
   margin-bottom: 16px;
   resize: none;
 }
+
 input[type="submit"] {
   background-color: var(--accent);
   color: var(--text-secondary);
@@ -207,6 +229,7 @@ input[type="submit"] {
   /* border-radius: 1rem; */
   cursor: pointer;
 }
+
 input[type="search"] {
   border: none;
   background: transparent;
@@ -218,27 +241,33 @@ input[type="search"] {
   border-radius: 4px;
   color: var(--text-secondary);
 }
+
 input[type="search"]::placeholder {
   color: #bbb;
 }
+
 ::-moz-selection {
   color: var(--text);
   background: var(--secondary);
 }
+
 ::selection {
   color: var(--text);
   background: var(--secondary);
 }
+
 .about p {
   text-align: center;
   padding: 5rem;
   word-wrap: break-word;
 }
+
 .about h1,
 h2 {
   text-align: center;
   padding: 1rem;
 }
+
 .about img {
   display: block;
   margin-left: auto;
@@ -246,18 +275,22 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+
 .imgtextbtn {
   display: flex;
   flex-direction: row;
 }
+
 .imgtextbtn .text {
   padding-left: 2vw;
   padding-right: 2vw;
 }
+
 .imgtextbtn p {
   color: var(--text);
   font-size: 1rem;
 }
+
 .imgtextbtn button {
   border: none;
   outline: 0;
@@ -274,6 +307,7 @@ h2 {
   margin-bottom: 0;
   margin-top: 6vh;
 }
+
 .imgtextbtn button.button-wishlist {
   border: none;
   outline: 0;
@@ -290,37 +324,45 @@ h2 {
   margin-bottom: 0;
   margin-top: 6vh;
 }
+
 .text-secondary {
   color: var(--text-secondary);
 }
+
 .card button:hover {
   opacity: 0.7;
   transition-duration: 0.2s;
   transform: scale(1.03);
 }
+
 .product-info p {
   text-align: center;
   padding: 0.5rem 3rem;
   word-wrap: break-word;
 }
+
 .reviews .author {
   font-style: italic;
   margin-top: 10px;
   font-size: 1rem;
   line-height: 1.4;
 }
+
 .reviews {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .active-star {
   color: var(--accent);
 }
+
 #map {
   height: 80vh;
   border-radius: 1rem;
 }
+
 footer {
   grid-area: footer;
   background-color: var(--primary);
@@ -333,23 +375,29 @@ footer {
   font-size: 2rem;
   font-weight: bold;
 }
+
 footer a {
   color: var(--text-secondary);
 }
+
 @media only screen and (min-width: 720px) {
+
   .hamburger,
   .close {
     display: none;
   }
+
   .card {
     width: 22vw;
   }
 }
+
 @media screen and (max-width: 1385px) {
   .card {
     max-width: 100%;
   }
 }
+
 @media only screen and (max-width: 720px) {
   .hamburger {
     position: fixed;
@@ -360,6 +408,7 @@ footer a {
     top: 1rem;
     right: 1rem;
   }
+
   .menu {
     position: fixed;
     z-index: 100;
@@ -376,6 +425,7 @@ footer a {
     transform: translateY(-100%);
     transition: transform 0.2s ease;
   }
+
   .close {
     position: absolute;
     border: none;
@@ -384,40 +434,50 @@ footer a {
     top: 1rem;
     right: 1rem;
   }
+
   .menu:target {
     /* show menu */
     transform: translateY(0);
   }
+
   .imgtextbtn {
     display: flex;
     flex-direction: column;
   }
+
   nav {
     border: none;
   }
+
   nav ul li {
     text-align: center;
   }
+
   .product-image {
     width: 100%;
     height: auto;
   }
+
   .card {
     width: auto;
   }
 }
+
 .danger {
   background-color: var(--danger);
   color: var(--text-secondary);
 }
+
 .success {
   background-color: var(--success);
   color: var(--text-secondary);
 }
+
 .warning {
   background-color: var(--warning);
   color: var(--text-secondary);
 }
+
 .info {
   background-color: var(--info);
   color: var(--text-secondary);

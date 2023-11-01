@@ -14,3 +14,8 @@
 # Logs and databases #
 ######################
 *.log
+
+# IDE files #
+#############
+*.code-workspace
+.git
