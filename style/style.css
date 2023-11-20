@@ -43,7 +43,7 @@ body {
   display: grid;
   grid-template:
     "header header header header header header"
-    "menu   main   main   main   main   main"
+    "menu   main   main   main   main   aside"
     "footer footer footer footer footer footer";
   grid-gap: 10px;
   padding: 10px;
@@ -61,8 +61,8 @@ header {
   font-size: 2rem;
   font-weight: bold;
 }
-nav {
-  grid-area: menu;
+nav,
+aside {
   padding: 20px 0;
   background-color: var(--primary);
   color: var(--text-secondary);
@@ -72,16 +72,11 @@ nav {
   flex-direction: column;
   justify-content: left;
 }
+nav {
+  grid-area: menu;
+}
 aside {
   grid-area: aside;
-  padding: 20px 0;
-  background-color: var(--primary);
-  color: var(--text-secondary);
-  border: 2px solid var(--nav-border);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
 }
 nav ul li {
   display: block;
