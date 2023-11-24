@@ -47,7 +47,7 @@ elWishlistButton.addEventListener('click', addToWishList, false);
 
 
 
-// let elWinkelmandje = document.getElementById('winkelmandje');
+let elWinkelmandje = document.getElementById('winkelmandje');
 
-// elWinkelmandje.addEventListener('blur', addProductToWinkelmandje, false);
+elWinkelmandje.addEventListener('click', addProductToWinkelmandje, false);
 
