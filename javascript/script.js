@@ -1,13 +1,10 @@
 function addProductToWinkelmandje() {
     // Create an "li" node:
-    const node = document.createElement("aside");
-
-
-    function addProductToWinkelmandje() {
-        // Create an "article" node:
-        const node = document.createElement("article");
-        node.className = "card";
-        node.innerHTML = `
+    const aside = document.createElement("aside");
+    // Create an "article" node:
+    const product = document.createElement("article");
+    node.className = "card";
+    node.innerHTML = `
                     <h1>SPECTRAFROST Swiftlite Ultrabook</h1>
                     <img src="assets/images/SpectraFrost Ultrabook.jpeg" alt="SpectraFrost Ultrabook" />
 
@@ -19,27 +16,39 @@ function addProductToWinkelmandje() {
                     <button>Add to Cart</button>
             `;
 
-        // Append the "article" node to the body:
-        const elBody = document.getElementsByTagName("body")[0];
-        elBody.appendChild(node);
-        console.log('test');
-    }
+    // Append the "article" node to the body:
+    const elBody = document.getElementsByTagName("body")[0];
+    elBody.appendChild(aside);
+    console.log('test');
 }
 
 let elWishlist = document.getElementById('wishlist');
 
 elWishlist.addEventListener('click', addToWishList, false);
+
 // 'blur' is één van de vele DOM events die wordt aangeroepen
 
 function addToWishList() {
     var element = document.getElementById("wishlist");
     element.classList.toggle("wishlist-active");
     console.log("product added to wishlist");
+    if (element.classList.contains("wishlist-active")) {
+        element.innerHTML = `<i class="fa-solid fa-heart text-secondary"></i> Wishlist`;
+        console.log("hart niet solid");
+    } else {
+        element.innerHTML = `<i class="fa-regular fa-heart text-secondary"></i> Wishlist`;
+        console.log("hart solid");
+    }
 }
 
 
+let elWishlistButton = document.querySelector('.button-wishlist');
+
+elWishlistButton.addEventListener('click', addToWishList, false);
 
 
-let elWinkelmandje = document.getElementById('winkelmandje');
 
-elWinkelmandje.addEventListener('blur', addProductToWinkelmandje, false);
+// let elWinkelmandje = document.getElementById('winkelmandje');
+
+// elWinkelmandje.addEventListener('blur', addProductToWinkelmandje, false);
+
