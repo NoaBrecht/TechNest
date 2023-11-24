@@ -272,8 +272,8 @@ h2 {
   border: none;
   outline: 0;
   padding: 0.75rem 1.25rem;
-  /* color: var(--text); */
-  /* background-color: var(--primary); */
+  color: var(--text);
+  background-color: var(--primary);
   text-align: center;
   cursor: pointer;
   width: 100%;
