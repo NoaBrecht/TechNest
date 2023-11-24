@@ -31,13 +31,12 @@ elWishlist.addEventListener('click', addToWishList, false);
 function addToWishList() {
     var element = document.getElementById("wishlist");
     element.classList.toggle("wishlist-active");
-    console.log("product added to wishlist");
     if (element.classList.contains("wishlist-active")) {
         element.innerHTML = `<i class="fa-solid fa-heart text-secondary"></i> Wishlist`;
-        console.log("hart niet solid");
+        console.log("Item toegevoegd aan wishlist");
     } else {
         element.innerHTML = `<i class="fa-regular fa-heart text-secondary"></i> Wishlist`;
-        console.log("hart solid");
+        console.log("Item verwijdered uit wishlist");
     }
 }
 
