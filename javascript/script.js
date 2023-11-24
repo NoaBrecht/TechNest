@@ -26,7 +26,17 @@ function addProductToWinkelmandje() {
     }
 }
 
+let elWishlist = document.getElementById('wishlist');
+
+elWishlist.addEventListener('blur', addProductToWinkelmandje, false);
+// 'blur' is één van de vele DOM events die wordt aangeroepen
+
+
+
 let elWinkelmandje = document.getElementById('winkelmandje');
 
 elWinkelmandje.addEventListener('blur', addProductToWinkelmandje, false);
-// 'blur' is één van de vele DOM events die wordt aangeroepen
+function addToWishList() {
+   var element = document.getElementById("myDIV");
+   element.classList.toggle("wishlist-active");
+}
