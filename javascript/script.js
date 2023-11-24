@@ -28,7 +28,7 @@ function addProductToWinkelmandje() {
 
 let elWishlist = document.getElementById('wishlist');
 
-elWishlist.addEventListener('blur', addToWishList, false);
+elWishlist.addEventListener('click', addToWishList, false);
 // 'blur' is één van de vele DOM events die wordt aangeroepen
 
 function addToWishList() {
