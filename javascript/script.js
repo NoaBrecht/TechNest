@@ -1,3 +1,16 @@
+// make a 2d array with all the products and prices
+let products = [
+    ["LuminX 32-inch White Gaming Monitor", 1480],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+];
+
 function addProductToWinkelmandje() {
     // Create an "li" node:
     const aside = document.createElement("aside");
