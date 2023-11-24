@@ -28,15 +28,18 @@ function addProductToWinkelmandje() {
 
 let elWishlist = document.getElementById('wishlist');
 
-elWishlist.addEventListener('blur', addProductToWinkelmandje, false);
+elWishlist.addEventListener('blur', addToWishList, false);
 // 'blur' is één van de vele DOM events die wordt aangeroepen
+
+function addToWishList() {
+    var element = document.getElementById("wishlist");
+    element.classList.toggle("wishlist-active");
+    console.log("product added to wishlist");
+}
+
 
 
 
 let elWinkelmandje = document.getElementById('winkelmandje');
 
 elWinkelmandje.addEventListener('blur', addProductToWinkelmandje, false);
-function addToWishList() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("wishlist-active");
-}

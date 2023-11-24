@@ -263,7 +263,6 @@ h2 {
   cursor: pointer;
   width: 100%;
   border-radius: 1rem;
-
   font-size: 18px;
   margin: auto;
   margin-bottom: 0;
@@ -273,20 +272,23 @@ h2 {
   border: none;
   outline: 0;
   padding: 0.75rem 1.25rem;
-  color: var(--text);
-  background-color: var(--primary);
+  /* color: var(--text); */
+  /* background-color: var(--primary); */
   text-align: center;
   cursor: pointer;
   width: 100%;
   border-radius: 1rem;
-
   font-size: 18px;
   margin: auto;
   margin-bottom: 0;
   margin-top: 6vh;
 }
 .wishlist-active {
-  color: var(--accent);
+  opacity: 0.7;
+  transition-duration: 0.2s;
+  transform: scale(1.03);
+  color: red;
+  background-color: green;
 }
 .text-secondary {
   color: var(--text-secondary);
