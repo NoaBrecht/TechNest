@@ -35,6 +35,26 @@ let products = [
     ["SPECTRAFROST Swiftlite Ultrabook", 1259],
 ];
 
+// make a function to add the products to the cart
+function addProductToWinkelmandje(productIndex) {
+    product = products[productIndex];
+    productName = product[0];
+    productPrice = product[1];
+    productImage = product[2];
+    // create the asied element
+    const aside = document.createElement("aside");
+    const product = document.createElement("article");
+    product.className = "card";
+    product.innerHTML = `
+                    <h1>${productName}</h1>
+                    <img src="${productImage}" alt="${productName}" />
+
+                    <p class="price">${productPrice}</p>
+            `;
+    const elBody = document.getElementsByTagName("body")[0];
+    elBody.appendChild(aside);
+}
+
 
 // function addProductToWinkelmandje() {
 //     // Create an "li" node:
