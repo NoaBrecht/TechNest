@@ -1,45 +1,9 @@
-// make a 2d array with all the products and prices
-let products = [
-    ["LuminX 32-inch White Gaming Monitor", 1480],
-    ["SPECTRAFROST X1 GAMING LAPTOP ", 4999],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
-];
-
-function addProductToWinkelmandje() {
-    // Create an "li" node:
-    const aside = document.createElement("aside");
-    // Create an "article" node:
-    const product = document.createElement("article");
-    node.className = "card";
-    node.innerHTML = `
-                    <h1>SPECTRAFROST Swiftlite Ultrabook</h1>
-                    <img src="assets/images/SpectraFrost Ultrabook.jpeg" alt="SpectraFrost Ultrabook" />
-
-                    <p class="price">Starting at &euro;1259</p>
-                    <p>
-                        Maak kennis met de SPECTRAFROST Swiftlite Ultrabook - waar
-                        betaalbaarheid samengaat met draagbaarheid.
-                    </p>
-                    <button>Add to Cart</button>
-            `;
-
-    // Append the "article" node to the body:
-    const elBody = document.getElementsByTagName("body")[0];
-    elBody.appendChild(aside);
-    console.log('test');
-}
+//* Whishlist
 
 let elWishlist = document.getElementById('wishlist');
-
-elWishlist.addEventListener('click', addToWishList, false);
-
-// 'blur' is één van de vele DOM events die wordt aangeroepen
+if (elWishlist != null) {
+    elWishlist.addEventListener('click', addToWishList, false);
+}
 
 function addToWishList() {
     var element = document.getElementById("wishlist");
@@ -53,14 +17,45 @@ function addToWishList() {
     }
 }
 
-
-let elWishlistButton = document.querySelector('.button-wishlist');
-
-elWishlistButton.addEventListener('click', addToWishList, false);
+//! Einde Whishlist
 
 
+//* Winkelmandje
 
-let elWinkelmandje = document.getElementById('winkelmandje');
+// make a 2d array with all the products and prices
+let products = [
+    ["LuminX 32-inch White Gaming Monitor", 1480, "assets/images/LuminX.jpeg"],
+    ["SPECTRAFROST X1 GAMING LAPTOP ", 4999],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+    ["SPECTRAFROST Swiftlite Ultrabook", 1259],
+];
 
-elWinkelmandje.addEventListener('click', addProductToWinkelmandje, false);
 
+// function addProductToWinkelmandje() {
+//     // Create an "li" node:
+//     const aside = document.createElement("aside");
+//     // Create an "article" node:
+//     const product = document.createElement("article");
+//     node.className = "card";
+//     node.innerHTML = `
+//                     <h1>SPECTRAFROST Swiftlite Ultrabook</h1>
+//                     <img src="assets/images/SpectraFrost Ultrabook.jpeg" alt="SpectraFrost Ultrabook" />
+
+//                     <p class="price">Starting at &euro;1259</p>
+//                     <p>
+//                         Maak kennis met de SPECTRAFROST Swiftlite Ultrabook - waar
+//                         betaalbaarheid samengaat met draagbaarheid.
+//                     </p>
+//                     <button>Add to Cart</button>
+//             `;
+
+//     // Append the "article" node to the body:
+//     const elBody = document.getElementsByTagName("body")[0];
+//     elBody.appendChild(aside);
+//     console.log('test');
+// }
