@@ -36,15 +36,18 @@ function addToCart(productName) {
     // Compare the product name with the JSON data
     for (let product of rootObject.products) {
         if (product.name === productName) {
-            for (let key in product) {
-                console.log(`${key}: ${product[key]}`);
-                let elP = document.createElement('p');
-                elP.innerHTML = `${key}: ${product[key]}`;
-                elAside.appendChild(elP);
-            }
+            console.log(`Naam: ${product.name}`);
+            console.log(`Prijs: ${product.price}`);
+            console.log(`Image: ${product.image}`);
+
+            // Create a new article element
+            let elP = document.createElement('p');
+            elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${product.price}`;
+            elAside.appendChild(elP);
         }
     }
 }
+
 
 // for (let product of rootObject.products) {
 //     console.log(`Name: ${product.name}`);
@@ -57,4 +60,8 @@ function addToCart(productName) {
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
     elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
+}
+let elEcoWoodElite = document.getElementById('EcoWoodElite');
+if (elEcoWoodElite != null) {
+    elEcoWoodElite.addEventListener('click', () => addToCart("SPECTRAFROST EcoWoodElite Desktop PC"), false);
 }
