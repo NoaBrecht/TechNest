@@ -78,6 +78,20 @@ nav {
 aside {
   grid-area: aside;
 }
+aside p {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd; /* Light gray border */
+  padding: 5px 0;
+}
+aside img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-right: 10px;
+}
+aside .quantity {
+  margin-left: auto; /* Push to the right */
+}
 nav ul li {
   display: block;
   border-radius: 10px;
