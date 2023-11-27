@@ -1,4 +1,4 @@
-import products from "../assets/json/products.json" assert { type: 'json' };
+import rootObject from "../assets/json/products.json" assert { type: 'json' };
 
 //* Whishlist
 
@@ -34,11 +34,11 @@ function addToCart(productName) {
     }
 }
 
-// for (let product of products) {
-//     console.log(`Name: ${product.name}`);
-//     console.log(`Price: ${product.price}`);
-//     console.log(`Image: ${product.image}`);
-// }
+for (let product of rootObject.products) {
+    console.log(`Name: ${product.name}`);
+    console.log(`Price: ${product.price}`);
+    console.log(`Image: ${product.image}`);
+}
 
 
 
