@@ -37,9 +37,7 @@ function addToCart(productName) {
     // Compare the product name with the JSON data
     for (let product of rootObject.products) {
         if (product.name === productName) {
-            console.log(`Naam: ${product.name}`);
-            console.log(`Prijs: ${product.price}`);
-            console.log(`Image: ${product.image}`);
+
 
             // If product is already in cart, increase quantity
             if (cart[productName]) {
@@ -65,6 +63,10 @@ function addToCart(productName) {
                 cart[productName].element.appendChild(elQuantity);
             }
             elQuantity.textContent = ` x ${cart[productName].quantity}`;
+            console.log(`Naam: ${product.name}`);
+            console.log(`Prijs: ${product.price}`);
+            console.log(`Image: ${product.image}`);
+            console.log(`Aantal: ${cart[productName].quantity}`);
         }
     }
 }
