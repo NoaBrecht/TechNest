@@ -16,22 +16,52 @@
     },
     {
         "name": "SpectraFrost X1 Gaming Laptop",
-        "price": "1480",
-        "image": "assets/images/LuminX.jpeg"
+        "price": "1259",
+        "image": "assets/images/SpectraFrost X1.png"
     },
     {
-        "name": "LuminX 32-inch White Gaming Monitor",
-        "price": "1480",
-        "image": "assets/images/LuminX.jpeg"
+        "name": "OnyxJet Pro Draadloze Kleurenprinter",
+        "price": "1586",
+        "image": "assets/images/OnyxJet.jpg"
     },
     {
-        "name": "LuminX 32-inch White Gaming Monitor",
-        "price": "1480",
-        "image": "assets/images/LuminX.jpeg"
+        "name": "StealthGlide Black Wireless Mouse",
+        "price": "132",
+        "image": "assets/images/StealthGlide Black Wireless Mouse.png"
     },
     {
-        "name": "LuminX 32-inch White Gaming Monitor",
-        "price": "1480",
-        "image": "assets/images/LuminX.jpeg"
+        "name": "PureTone Stereo PC Speakers",
+        "price": "269",
+        "image": "assets/images/puretone.jpeg"
+    },
+    {
+        "name": "EcoView Essentials Office Monitor",
+        "price": "210,39",
+        "image": "assets/images/ecoview.jpeg"
+    },
+    {
+        "name": "AmethystGrip Purple Game Controller",
+        "price": "132",
+        "image": "assets/images/controler.jpeg"
+    },
+    {
+        "name": "CRYSTALVIEW CineMaster Pro Video Camera",
+        "price": "3399",
+        "image": "assets/images/CineMaster pro.jpeg"
+    },
+    {
+        "name": "CrystalView Pro Webcam",
+        "price": "250",
+        "image": "assets/images/CrystalView Pro Webcam.jpeg"
+    },
+    {
+        "name": "PrecisionGlide Muismat",
+        "price": "50,59",
+        "image": "assets/images/PrecisionGlide mousepad.jpeg"
+    },
+    {
+        "name": "TechMaster Pro Mechanische Toetsenbord",
+        "price": "250",
+        "image": "assets/images/TechMaster Pro Mechanische Toetsenbord.jpeg"
     }
 ]
