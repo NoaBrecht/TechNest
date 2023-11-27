@@ -1,3 +1,5 @@
+import product from "../assets/json/products.json" assert { type: 'json' };
+
 //* Whishlist
 
 let elWishlist = document.getElementById('wishlist');
