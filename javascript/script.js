@@ -24,9 +24,25 @@ function addToWishList() {
 
 //* Winkelmandje
 
+function addToCart(productName) {
+    console.log(`Adding ${productName} to cart`);
+    // Create an aside if there isn't already one
+    let elAside = document.querySelector('aside');
+    if (!elAside) {
+        elAside = document.createElement('aside');
+        document.body.appendChild(elAside);
+    }
+}
 
-for (let product of products) {
-    console.log(`Naam: ${product.name}`);
-    console.log(`Prijs: ${product.price}`);
-    console.log(`Afbeelding: ${product.image}`);
+// for (let product of products) {
+//     console.log(`Name: ${product.name}`);
+//     console.log(`Price: ${product.price}`);
+//     console.log(`Image: ${product.image}`);
+// }
+
+
+
+let elUltrabook = document.getElementById('Ultrabook');
+if (elUltrabook != null) {
+    elUltrabook.addEventListener('click', addToCart("Ultrabook"), false);
 }
