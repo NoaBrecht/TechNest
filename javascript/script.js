@@ -32,17 +32,26 @@ function addToCart(productName) {
         elAside = document.createElement('aside');
         document.body.appendChild(elAside);
     }
+
+    // Compare the product name with the JSON data
+    for (let product of rootObject.products) {
+        if (product.name === productName) {
+            for (let key in product) {
+                console.log(`${key}: ${product[key]}`);
+            }
+        }
+    }
 }
 
-for (let product of rootObject.products) {
-    console.log(`Name: ${product.name}`);
-    console.log(`Price: ${product.price}`);
-    console.log(`Image: ${product.image}`);
-}
+// for (let product of rootObject.products) {
+//     console.log(`Name: ${product.name}`);
+//     console.log(`Price: ${product.price}`);
+//     console.log(`Image: ${product.image}`);
+// }
 
 
 
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
-    elUltrabook.addEventListener('click', () => addToCart("Ultrabook"), false);
+    elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
 }
