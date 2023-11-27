@@ -38,6 +38,9 @@ function addToCart(productName) {
         if (product.name === productName) {
             for (let key in product) {
                 console.log(`${key}: ${product[key]}`);
+                let elP = document.createElement('p');
+                elP.innerHTML = `${key}: ${product[key]}`;
+                elAside.appendChild(elP);
             }
         }
     }
