@@ -44,5 +44,5 @@ function addToCart(productName) {
 
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
-    elUltrabook.addEventListener('click', addToCart("Ultrabook"), false);
+    elUltrabook.addEventListener('click', () => addToCart("Ultrabook"), false);
 }
