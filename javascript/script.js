@@ -23,6 +23,7 @@ function addToWishList() {
 
 
 //* Winkelmandje
+let cart = {};
 
 function addToCart(productName) {
     console.log(`Adding ${productName} to cart`);
@@ -40,10 +41,30 @@ function addToCart(productName) {
             console.log(`Prijs: ${product.price}`);
             console.log(`Image: ${product.image}`);
 
-            // Create a new article element
-            let elP = document.createElement('p');
-            elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${product.price}`;
-            elAside.appendChild(elP);
+            // If product is already in cart, increase quantity
+            if (cart[productName]) {
+                cart[productName].quantity += 1;
+            } else {
+                // Create a new article element
+                let elP = document.createElement('p');
+                elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${product.price}`;
+                elAside.appendChild(elP);
+
+                // Add product to cart with quantity 1
+                cart[productName] = {
+                    element: elP,
+                    quantity: 1
+                };
+            }
+
+            // Update quantity in the aside element
+            let elQuantity = cart[productName].element.querySelector('.quantity');
+            if (!elQuantity) {
+                elQuantity = document.createElement('span');
+                elQuantity.className = 'quantity';
+                cart[productName].element.appendChild(elQuantity);
+            }
+            elQuantity.textContent = ` x ${cart[productName].quantity}`;
         }
     }
 }
@@ -65,3 +86,4 @@ let elEcoWoodElite = document.getElementById('EcoWoodElite');
 if (elEcoWoodElite != null) {
     elEcoWoodElite.addEventListener('click', () => addToCart("SPECTRAFROST EcoWoodElite Desktop PC"), false);
 }
+
