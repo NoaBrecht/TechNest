@@ -1,5 +1,6 @@
-[
-    {
+{
+  "products": [
+        {
         "name": "SPECTRAFROST Swiftlite Ultrabook",
         "price": "1259",
         "image": "assets/images/SpectraFrost Ultrabook.jpeg"
@@ -64,4 +65,5 @@
         "price": "250",
         "image": "assets/images/TechMaster Pro Mechanische Toetsenbord.jpeg"
     }
-]
+  ]
+}
