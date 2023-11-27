@@ -1,4 +1,4 @@
-import product from "../assets/json/products.json" assert { type: 'json' };
+import products from "../assets/json/products.json" assert { type: 'json' };
 
 //* Whishlist
 
@@ -23,3 +23,10 @@ function addToWishList() {
 
 
 //* Winkelmandje
+
+
+for (let product of products) {
+    console.log(`Naam: ${product.name}`);
+    console.log(`Prijs: ${product.price}`);
+    console.log(`Afbeelding: ${product.image}`);
+}
