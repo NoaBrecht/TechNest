@@ -115,3 +115,7 @@ let elMuismat = document.getElementById('Muismat');
 if (elMuismat != null) {
     elMuismat.addEventListener('click', () => addToCart("PrecisionGlide Muismat"), false);
 }
+let elToetsenbord = document.getElementById('Toetsenbord');
+if (elToetsenbord != null) {
+    elToetsenbord.addEventListener('click', () => addToCart("TechMaster Pro Mechanische Toetsenbord"), false);
+}
