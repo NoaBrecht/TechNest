@@ -80,3 +80,8 @@ let elGaming_Laptop = document.getElementById('SPECTRAFROST_X1_GAMING_LAPTOP');
 if (elGaming_Laptop != null) {
     elGaming_Laptop.addEventListener('click', () => addToCart("SpectraFrost X1 Gaming Laptop"), false);
 }
+
+let elGaming_Monitor = document.getElementById('White_Gaming_Monitor');
+if (elGaming_Monitor != null) {
+    elGaming_Monitor.addEventListener('click', () => addToCart("LuminX 32-inch White Gaming Monitor"), false);
+}
