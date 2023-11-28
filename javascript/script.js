@@ -99,3 +99,7 @@ let elOffice_Monitor = document.getElementById('Office_Monitor');
 if (elOffice_Monitor != null) {
     elOffice_Monitor.addEventListener('click', () => addToCart("EcoView Essentials Office Monitor"), false);
 }
+let elController = document.getElementById('Controller');
+if (elController != null) {
+    elController.addEventListener('click', () => addToCart("EcoView AmethystGrip Purple Game Controller"), false);
+}
