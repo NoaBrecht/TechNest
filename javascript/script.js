@@ -111,3 +111,7 @@ let elWebcam = document.getElementById('Webcam');
 if (elWebcam != null) {
     elWebcam.addEventListener('click', () => addToCart("CrystalView Pro Webcam"), false);
 }
+let elMuismat = document.getElementById('Controller');
+if (elMuismat != null) {
+    elMuismat.addEventListener('click', () => addToCart("PrecisionGlide Muismat"), false);
+}
