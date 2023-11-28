@@ -77,6 +77,7 @@ nav {
 }
 aside {
   grid-area: aside;
+  padding: 1rem;
 }
 aside p {
   display: flex;
