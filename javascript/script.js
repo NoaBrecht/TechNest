@@ -91,3 +91,7 @@ let elMouse = document.getElementById('mouse');
 if (elMouse != null) {
     elMouse.addEventListener('click', () => addToCart("StealthGlide Black Wireless Mouse"), false);
 }
+let elSpeaker = document.getElementById('speaker');
+if (elSpeaker != null) {
+    elSpeaker.addEventListener('click', () => addToCart("PureTone Stereo PC Speakers"), false);
+}
