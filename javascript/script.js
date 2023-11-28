@@ -95,3 +95,7 @@ let elSpeaker = document.getElementById('speaker');
 if (elSpeaker != null) {
     elSpeaker.addEventListener('click', () => addToCart("PureTone Stereo PC Speakers"), false);
 }
+let elOffice_Monitor = document.getElementById('Office_Monitor');
+if (elOffice_Monitor != null) {
+    elOffice_Monitor.addEventListener('click', () => addToCart("EcoView Essentials Office Monitor"), false);
+}
