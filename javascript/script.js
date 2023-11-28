@@ -103,3 +103,7 @@ let elController = document.getElementById('Controller');
 if (elController != null) {
     elController.addEventListener('click', () => addToCart("AmethystGrip Purple Game Controller"), false);
 }
+let elPro_Video_Camera = document.getElementById('Pro_Video_Camera');
+if (elPro_Video_Camera != null) {
+    elPro_Video_Camera.addEventListener('click', () => addToCart("EcoView CRYSTALVIEW CineMaster Pro Video Camera"), false);
+}
