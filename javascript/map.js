@@ -11,3 +11,4 @@ var Logo = L.icon({
   iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
   popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
 });
+var marker = L.marker([51.230105976502685, 4.416225225411652], { icon: Logo }).addTo(map);
