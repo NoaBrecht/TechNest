@@ -56,7 +56,7 @@ function addToCart(productName) {
             }
             elQuantity.textContent = ` x ${cart[productName].quantity}`;
             console.log(`Naam: ${product.name}`);
-            console.log(`Aantal: ${cart[productName].price}`);
+            console.log(`Prijs: ${cart[productName].price}`);
             console.log(`Image: ${product.image}`);
             console.log(`Aantal: ${cart[productName].quantity}`);
         }
