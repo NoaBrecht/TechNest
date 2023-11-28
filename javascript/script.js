@@ -72,12 +72,6 @@ function addToCart(productName) {
 }
 
 
-// for (let product of rootObject.products) {
-//     console.log(`Name: ${product.name}`);
-//     console.log(`Price: ${product.price}`);
-//     console.log(`Image: ${product.image}`);
-// }
-
 
 
 let elUltrabook = document.getElementById('Ultrabook');
