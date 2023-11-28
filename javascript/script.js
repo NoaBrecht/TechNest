@@ -76,3 +76,7 @@ if (elEcoWoodElite != null) {
     elEcoWoodElite.addEventListener('click', () => addToCart("SPECTRAFROST EcoWoodElite Desktop PC"), false);
 }
 
+let elGaming_Laptop = document.getElementById('SPECTRAFROST_X1_GAMING_LAPTOP');
+if (elGaming_Laptop != null) {
+    elGaming_Laptop.addEventListener('click', () => addToCart("SpectraFrost X1 Gaming Laptop"), false);
+}
