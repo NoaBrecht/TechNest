@@ -101,5 +101,5 @@ if (elOffice_Monitor != null) {
 }
 let elController = document.getElementById('Controller');
 if (elController != null) {
-    elController.addEventListener('click', () => addToCart("EcoView AmethystGrip Purple Game Controller"), false);
+    elController.addEventListener('click', () => addToCart("AmethystGrip Purple Game Controller"), false);
 }
