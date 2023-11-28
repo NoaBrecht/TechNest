@@ -107,3 +107,7 @@ let elPro_Video_Camera = document.getElementById('Pro_Video_Camera');
 if (elPro_Video_Camera != null) {
     elPro_Video_Camera.addEventListener('click', () => addToCart("EcoView CRYSTALVIEW CineMaster Pro Video Camera"), false);
 }
+let elWebcam = document.getElementById('Webcam');
+if (elWebcam != null) {
+    elWebcam.addEventListener('click', () => addToCart("CrystalView Pro Webcam"), false);
+}
