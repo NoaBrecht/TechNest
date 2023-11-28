@@ -87,3 +87,7 @@ let elPrinter = document.getElementById('printer');
 if (elPrinter != null) {
     elPrinter.addEventListener('click', () => addToCart("OnyxJet Pro Draadloze Kleurenprinter"), false);
 }
+let elMouse = document.getElementById('mouse');
+if (elMouse != null) {
+    elMouse.addEventListener('click', () => addToCart("StealthGlide Black Wireless Mouse"), false);
+}
