@@ -1,12 +1,9 @@
 import rootObject from "../assets/json/products.json" assert { type: 'json' };
-
 //* Whishlist
-
 let elWishlist = document.getElementById('wishlist');
 if (elWishlist != null) {
     elWishlist.addEventListener('click', addToWishList, false);
 }
-
 function addToWishList() {
     var element = document.getElementById("wishlist");
     element.classList.toggle("wishlist-active");
@@ -18,7 +15,6 @@ function addToWishList() {
         console.log("Item verwijdered uit wishlist");
     }
 }
-
 //! Einde Whishlist
 
 
@@ -70,9 +66,6 @@ function addToCart(productName) {
         }
     }
 }
-
-
-
 
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
