@@ -43,6 +43,7 @@ function addToCart(productName) {
                 // Add product to cart with quantity 1
                 cart[productName] = {
                     element: elP,
+                    price: product.price,
                     quantity: 1
                 };
             }
@@ -55,7 +56,7 @@ function addToCart(productName) {
             }
             elQuantity.textContent = ` x ${cart[productName].quantity}`;
             console.log(`Naam: ${product.name}`);
-            console.log(`Prijs: ${product.price}`);
+            console.log(`Aantal: ${cart[productName].price}`);
             console.log(`Image: ${product.image}`);
             console.log(`Aantal: ${cart[productName].quantity}`);
         }
