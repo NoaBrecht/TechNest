@@ -40,7 +40,6 @@ function addToCart(productName) {
                 let elP = document.createElement('p');
                 elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${product.price}`;
                 elAside.appendChild(elP);
-
                 // Add product to cart with quantity 1
                 cart[productName] = {
                     element: elP,
