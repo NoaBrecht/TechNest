@@ -20,6 +20,7 @@ function addToWishList() {
 
 //* Winkelmandje
 let cart = {};
+let totalPrice = 0;
 function addToCart(productName) {
     console.log(`Adding ${productName} to cart`);
     // Create an aside if there isn't already one
@@ -59,6 +60,8 @@ function addToCart(productName) {
             console.log(`Prijs: ${cart[productName].price}`);
             console.log(`Image: ${product.image}`);
             console.log(`Aantal: ${cart[productName].quantity}`);
+            totalPrice += parseInt(product.price);
+            console.log(`Totaal: ${totalPrice}`)
         }
     }
 }
