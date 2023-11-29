@@ -65,7 +65,6 @@ function addToCart(productName) {
         }
     }
 }
-
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
     elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
