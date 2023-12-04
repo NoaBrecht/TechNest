@@ -59,8 +59,8 @@ function addToCart(productName) {
             console.log(`Prijs: ${cart[productName].price}`);
             console.log(`Image: ${product.image}`);
             console.log(`Aantal: ${cart[productName].quantity}`);
-            totalPrice += parseInt(product.price);
-            console.log(`Totaal: ${totalPrice}`)
+            totalPrice += parseFloat(product.price);
+            console.log(`Totaal: ${totalPrice}`);
         }
     }
 }

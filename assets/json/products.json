@@ -2,7 +2,7 @@
   "products": [
         {
         "name": "SPECTRAFROST Swiftlite Ultrabook",
-        "price": "1259",
+        "price": "599.99",
         "image": "assets/images/SpectraFrost Ultrabook.jpeg"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
         "name": "EcoView Essentials Office Monitor",
-        "price": "210,39",
+        "price": "210.39",
         "image": "assets/images/ecoview.jpeg"
     },
     {
