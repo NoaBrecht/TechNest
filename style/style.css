@@ -146,7 +146,8 @@ img {
   height: auto;
   width: auto;
 }
-.products {
+.products,
+.customers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -442,4 +443,7 @@ footer a {
 .info {
   background-color: var(--info);
   color: var(--text-secondary);
+}
+.center {
+  text-align: center;
 }

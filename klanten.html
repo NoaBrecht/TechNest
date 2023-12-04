@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Noa Van den Berghe" />
+
+    <title>Klanten - TechNest</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.svg" />
+    <meta name="description"
+        content="Welkom bij TechNest - Ontdek onze nieuwste producten, waaronder de SPECTRAFROST Swiftlite Ultrabook, SPECTRAFROST EcoWoodElite Desktop PC, en de LuminX 32-inch White Gaming Monitor." />
+    <meta name="keywords"
+        content="TechNest, SPECTRAFROST Swiftlite Ultrabook, SPECTRAFROST EcoWoodElite Desktop PC, LuminX 32-inch White Gaming Monitor, hardware webshop, computer hardware" />
+
+    <script src="javascript/script.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <p>TechNest</p>
+    </header>
+    <nav>
+        <ul class="menu" id="menu">
+            <a href="index.html">
+                <li><i class="fa-solid fa-house"></i><span>Home</span></li>
+            </a>
+            <a href="index.html#about">
+                <li><i class="fa-solid fa-info"></i><span>Over ons</span></li>
+            </a>
+            <a href="shop.html">
+                <li><i class="fa-solid fa-box"></i><span>Onze producten</span></li>
+            </a>
+            <a href="klanten.html">
+                <li class="active"><i class="fa-solid fa-users"></i><span>Onze klanten</span></li>
+            </a>
+            <li>
+                <form class="search">
+                    <input type="search" placeholder="Zoek een product">
+                    <input type="submit" value="Search" />
+                </form>
+            </li>
+            <a class="close" href="#" title="close">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <a class="hamburger" href="#menu" title="hamburger">
+            <i class="fa-solid fa-bars"></i> </a>
+        <section class="pagina-info">
+            <h1 class="center">Onze klanten</h1>
+            <p class="center">
+                TechNest is een bedrijf dat zich specialiseert in het verkopen van
+                computer hardware. We hebben een breed assortiment aan producten
+                die we aanbieden aan onze klanten. Hieronder vind je een aantal
+                van onze klanten.
+            </p>
+        </section>
+        <section class="customers">
+            <article class="card">
+                <h1>${klant.first_name}</h1>
+                <img src="${klant.avatar}" alt="${klant.first_name} avatar" />
+                <p>Email: ${klant.email}</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="contact.html">Contact</a>
+    </footer>
+</body>
+
+</html>

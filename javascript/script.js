@@ -64,6 +64,16 @@ function addToCart(productName) {
         }
     }
 }
+
+// //! Zorgen dat elk product automatisch een eventlistener krijgt.
+// for (let product of rootObject.products) {
+//     let elProduct = document.getElementById(product.name.replace(/ /g, '_'));
+
+//     if (elProduct != null) {
+//         elProduct.addEventListener('click', () => addToCart(product.name), false);
+//     }
+// }
+
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
     elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
@@ -102,7 +112,7 @@ if (elController != null) {
 }
 let elPro_Video_Camera = document.getElementById('Pro_Video_Camera');
 if (elPro_Video_Camera != null) {
-    elPro_Video_Camera.addEventListener('click', () => addToCart("EcoView CRYSTALVIEW CineMaster Pro Video Camera"), false);
+    elPro_Video_Camera.addEventListener('click', () => addToCart("CRYSTALVIEW CineMaster Pro Video Camera"), false);
 }
 let elWebcam = document.getElementById('Webcam');
 if (elWebcam != null) {
@@ -116,3 +126,21 @@ let elToetsenbord = document.getElementById('Toetsenbord');
 if (elToetsenbord != null) {
     elToetsenbord.addEventListener('click', () => addToCart("TechMaster Pro Mechanische Toetsenbord"), false);
 }
+
+//! Einde Winkelmandje
+
+//* Klanten
+import Clients from "https://random-data-api.com/api/v2/users?size=10&response_type=json" assert { type: 'json' };
+let elClients = document.getElementById('customers');
+
+// for (let klant of Clients.klanten) {
+//     // Create a new article element
+//     elClients.innerHTML = `
+//             <article class="card">
+//                 <h1>${klant.first_name}</h1>
+//                 <img src="${klant.avatar}" alt="${klant.first_name} avatar" />
+//                 <p>Email: ${klant.email}</p>
+//             </article>
+//             `;
+//     elClients.appendChild(elP);
+// }
