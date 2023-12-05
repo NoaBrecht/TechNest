@@ -64,22 +64,6 @@ function addToCart(productName) {
         }
     }
 }
-
-/*
-! Zorgen dat elk product automatisch een eventlistener krijgt.
-*/
-// for (let product of rootObject.products) {
-//     let elProduct = document.getElementById(product.name.replace(/ /g, '_'));
-
-//     if (elProduct != null) {
-//         elProduct.addEventListener('click', () => addToCart(product.name), false);
-//     }
-// }
-
-
-/*
-! Handmatig elk product een eventlistener geven.
-*/
 let elUltrabook = document.getElementById('Ultrabook');
 if (elUltrabook != null) {
     elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
@@ -132,12 +116,10 @@ let elToetsenbord = document.getElementById('Toetsenbord');
 if (elToetsenbord != null) {
     elToetsenbord.addEventListener('click', () => addToCart("TechMaster Pro Mechanische Toetsenbord"), false);
 }
-
 //! Einde Winkelmandje
 
 //* Klanten
 let elClients = document.getElementById('customers');
-
 fetch('https://random-data-api.com/api/v2/users?size=5&response_type=json') // 404 Error
     .then(function (response) {
         if (response.ok) {
