@@ -147,7 +147,7 @@ img {
   width: auto;
 }
 .products,
-.customers {
+#customers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
