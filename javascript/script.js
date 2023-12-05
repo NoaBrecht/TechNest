@@ -65,82 +65,101 @@ function addToCart(productName) {
     }
 }
 
-// //! Zorgen dat elk product automatisch een eventlistener krijgt.
-// for (let product of rootObject.products) {
-//     let elProduct = document.getElementById(product.name.replace(/ /g, '_'));
+//! Zorgen dat elk product automatisch een eventlistener krijgt.
+for (let product of rootObject.products) {
+    let elProduct = document.getElementById(product.name.replace(/ /g, '_'));
 
-//     if (elProduct != null) {
-//         elProduct.addEventListener('click', () => addToCart(product.name), false);
-//     }
+    if (elProduct != null) {
+        elProduct.addEventListener('click', () => addToCart(product.name), false);
+    }
+}
+
+
+/*
+! Handmatig elk product een eventlistener geven.
+*/
+// let elUltrabook = document.getElementById('Ultrabook');
+// if (elUltrabook != null) {
+//     elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
 // }
-
-let elUltrabook = document.getElementById('Ultrabook');
-if (elUltrabook != null) {
-    elUltrabook.addEventListener('click', () => addToCart("SPECTRAFROST Swiftlite Ultrabook"), false);
-}
-let elEcoWoodElite = document.getElementById('EcoWoodElite');
-if (elEcoWoodElite != null) {
-    elEcoWoodElite.addEventListener('click', () => addToCart("SPECTRAFROST EcoWoodElite Desktop PC"), false);
-}
-let elGaming_Monitor = document.getElementById('White_Gaming_Monitor');
-if (elGaming_Monitor != null) {
-    elGaming_Monitor.addEventListener('click', () => addToCart("LuminX 32-inch White Gaming Monitor"), false);
-}
-let elGaming_Laptop = document.getElementById('SPECTRAFROST_X1_GAMING_LAPTOP');
-if (elGaming_Laptop != null) {
-    elGaming_Laptop.addEventListener('click', () => addToCart("SpectraFrost X1 Gaming Laptop"), false);
-}
-let elPrinter = document.getElementById('printer');
-if (elPrinter != null) {
-    elPrinter.addEventListener('click', () => addToCart("OnyxJet Pro Draadloze Kleurenprinter"), false);
-}
-let elMouse = document.getElementById('mouse');
-if (elMouse != null) {
-    elMouse.addEventListener('click', () => addToCart("StealthGlide Black Wireless Mouse"), false);
-}
-let elSpeaker = document.getElementById('speaker');
-if (elSpeaker != null) {
-    elSpeaker.addEventListener('click', () => addToCart("PureTone Stereo PC Speakers"), false);
-}
-let elOffice_Monitor = document.getElementById('Office_Monitor');
-if (elOffice_Monitor != null) {
-    elOffice_Monitor.addEventListener('click', () => addToCart("EcoView Essentials Office Monitor"), false);
-}
-let elController = document.getElementById('Controller');
-if (elController != null) {
-    elController.addEventListener('click', () => addToCart("AmethystGrip Purple Game Controller"), false);
-}
-let elPro_Video_Camera = document.getElementById('Pro_Video_Camera');
-if (elPro_Video_Camera != null) {
-    elPro_Video_Camera.addEventListener('click', () => addToCart("CRYSTALVIEW CineMaster Pro Video Camera"), false);
-}
-let elWebcam = document.getElementById('Webcam');
-if (elWebcam != null) {
-    elWebcam.addEventListener('click', () => addToCart("CrystalView Pro Webcam"), false);
-}
-let elMuismat = document.getElementById('Muismat');
-if (elMuismat != null) {
-    elMuismat.addEventListener('click', () => addToCart("PrecisionGlide Muismat"), false);
-}
-let elToetsenbord = document.getElementById('Toetsenbord');
-if (elToetsenbord != null) {
-    elToetsenbord.addEventListener('click', () => addToCart("TechMaster Pro Mechanische Toetsenbord"), false);
-}
+// let elEcoWoodElite = document.getElementById('EcoWoodElite');
+// if (elEcoWoodElite != null) {
+//     elEcoWoodElite.addEventListener('click', () => addToCart("SPECTRAFROST EcoWoodElite Desktop PC"), false);
+// }
+// let elGaming_Monitor = document.getElementById('White_Gaming_Monitor');
+// if (elGaming_Monitor != null) {
+//     elGaming_Monitor.addEventListener('click', () => addToCart("LuminX 32-inch White Gaming Monitor"), false);
+// }
+// let elGaming_Laptop = document.getElementById('SPECTRAFROST_X1_GAMING_LAPTOP');
+// if (elGaming_Laptop != null) {
+//     elGaming_Laptop.addEventListener('click', () => addToCart("SpectraFrost X1 Gaming Laptop"), false);
+// }
+// let elPrinter = document.getElementById('printer');
+// if (elPrinter != null) {
+//     elPrinter.addEventListener('click', () => addToCart("OnyxJet Pro Draadloze Kleurenprinter"), false);
+// }
+// let elMouse = document.getElementById('mouse');
+// if (elMouse != null) {
+//     elMouse.addEventListener('click', () => addToCart("StealthGlide Black Wireless Mouse"), false);
+// }
+// let elSpeaker = document.getElementById('speaker');
+// if (elSpeaker != null) {
+//     elSpeaker.addEventListener('click', () => addToCart("PureTone Stereo PC Speakers"), false);
+// }
+// let elOffice_Monitor = document.getElementById('Office_Monitor');
+// if (elOffice_Monitor != null) {
+//     elOffice_Monitor.addEventListener('click', () => addToCart("EcoView Essentials Office Monitor"), false);
+// }
+// let elController = document.getElementById('Controller');
+// if (elController != null) {
+//     elController.addEventListener('click', () => addToCart("AmethystGrip Purple Game Controller"), false);
+// }
+// let elPro_Video_Camera = document.getElementById('Pro_Video_Camera');
+// if (elPro_Video_Camera != null) {
+//     elPro_Video_Camera.addEventListener('click', () => addToCart("CRYSTALVIEW CineMaster Pro Video Camera"), false);
+// }
+// let elWebcam = document.getElementById('Webcam');
+// if (elWebcam != null) {
+//     elWebcam.addEventListener('click', () => addToCart("CrystalView Pro Webcam"), false);
+// }
+// let elMuismat = document.getElementById('Muismat');
+// if (elMuismat != null) {
+//     elMuismat.addEventListener('click', () => addToCart("PrecisionGlide Muismat"), false);
+// }
+// let elToetsenbord = document.getElementById('Toetsenbord');
+// if (elToetsenbord != null) {
+//     elToetsenbord.addEventListener('click', () => addToCart("TechMaster Pro Mechanische Toetsenbord"), false);
+// }
 
 //! Einde Winkelmandje
 
 //* Klanten
-import Clients from "https://random-data-api.com/api/v2/users?size=10&response_type=json" assert { type: 'json' };
 let elClients = document.getElementById('customers');
 
-// for (let klant of Clients.klanten) {
-//     // Create a new article element
-//     elClients.innerHTML = `
-//             <article class="card">
-//                 <h1>${klant.first_name}</h1>
-//                 <img src="${klant.avatar}" alt="${klant.first_name} avatar" />
-//                 <p>Email: ${klant.email}</p>
-//             </article>
-//             `;
-//     elClients.appendChild(elP);
-// }
+fetch('https://random-data-api.com/api/v2/users?size=5&response_type=json') // 404 Error
+    .then(function (response) {
+        if (response.ok) {
+            return response.json();
+        } else {
+            return Promise.reject(response.status);
+        }
+    })
+    .then(function (response) {
+        response.forEach(function (klant) {
+
+            let elKlant = document.createElement('article');
+            elKlant.classList.add('card');
+
+            elKlant.innerHTML = `
+                    <h1>${klant.first_name} ${klant.last_name}</h1>
+                    <img src="${klant.avatar}" alt="${klant.first_name} avatar" />
+                    <p>Email: ${klant.email}</p>
+                    <p>Land: ${klant.address.country}</p>
+                    <p>Betaalmethode: ${klant.subscription.payment_method}</p>
+                `;
+            elClients.appendChild(elKlant);
+        });
+    })
+    .catch(function (error) {
+        console.error("Error with message: " + error)
+    });
