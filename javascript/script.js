@@ -120,30 +120,32 @@ if (elToetsenbord != null) {
 
 //* Klanten
 let elClients = document.getElementById('customers');
-fetch('https://random-data-api.com/api/v2/users?size=5&response_type=json') // 404 Error
-    .then(function (response) {
-        if (response.ok) {
-            return response.json();
-        } else {
-            return Promise.reject(response.status);
-        }
-    })
-    .then(function (response) {
-        response.forEach(function (klant) {
+if (elClients != null) {
+    fetch('https://random-data-api.com/api/v2/users?size=5&response_type=json') // 404 Error
+        .then(function (response) {
+            if (response.ok) {
+                return response.json();
+            } else {
+                return Promise.reject(response.status);
+            }
+        })
+        .then(function (response) {
+            response.forEach(function (klant) {
 
-            let elKlant = document.createElement('article');
-            elKlant.classList.add('card');
+                let elKlant = document.createElement('article');
+                elKlant.classList.add('card');
 
-            elKlant.innerHTML = `
+                elKlant.innerHTML = `
                     <h1>${klant.first_name} ${klant.last_name}</h1>
-                    <img src="${klant.avatar}" alt="${klant.first_name} avatar" />
+                    <img src="${klant.avatar}" alt="De profielfoto van ${klant.first_name} kan niet geladen worden"/>
                     <p>Email: ${klant.email}</p>
                     <p>Land: ${klant.address.country}</p>
                     <p>Betaalmethode: ${klant.subscription.payment_method}</p>
                 `;
-            elClients.appendChild(elKlant);
+                elClients.appendChild(elKlant);
+            });
+        })
+        .catch(function (error) {
+            console.error(`Error with message: ${error}`)
         });
-    })
-    .catch(function (error) {
-        console.error(`Error with message: ${error}`)
-    });
+}
