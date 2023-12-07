@@ -136,11 +136,17 @@ if (elClients != null) {
                 elKlant.classList.add('card');
 
                 elKlant.innerHTML = `
+<<<<<<< Updated upstream
                     <h1>${klant.first_name} ${klant.last_name}</h1>
                     <img src="${klant.avatar}" alt="De profielfoto van ${klant.first_name} kan niet geladen worden"/>
                     <p>Email: ${klant.email}</p>
                     <p>Land: ${klant.address.country}</p>
                     <p>Betaalmethode: ${klant.subscription.payment_method}</p>
+=======
+                    <h1>${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1>
+                    <p>${klant.location.country}</p>
+                    <img src="${klant.picture.large}" alt="De profielfoto van ${klant.name.first} kan niet geladen worden"/>
+>>>>>>> Stashed changes
                 `;
                 elClients.appendChild(elKlant);
             });
