@@ -119,9 +119,9 @@ if (elToetsenbord != null) {
 //! Einde Winkelmandje
 
 //* Klanten
-let elClients = document.getElementById('customers');
+let elClients = document.getElementById("customers");
 if (elClients != null) {
-    fetch('https://random-data-api.com/api/v2/users?size=5&response_type=json') // 404 Error
+    fetch("https://randomuser.me/api/?results=5") // 404 Error
         .then(function (response) {
             if (response.ok) {
                 return response.json();
@@ -130,28 +130,19 @@ if (elClients != null) {
             }
         })
         .then(function (response) {
-            response.forEach(function (klant) {
-
-                let elKlant = document.createElement('article');
-                elKlant.classList.add('card');
+            response.results.forEach(function (klant) {
+                let elKlant = document.createElement("article");
+                elKlant.classList.add("card");
 
                 elKlant.innerHTML = `
-<<<<<<< Updated upstream
-                    <h1>${klant.first_name} ${klant.last_name}</h1>
-                    <img src="${klant.avatar}" alt="De profielfoto van ${klant.first_name} kan niet geladen worden"/>
-                    <p>Email: ${klant.email}</p>
-                    <p>Land: ${klant.address.country}</p>
-                    <p>Betaalmethode: ${klant.subscription.payment_method}</p>
-=======
                     <h1>${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1>
                     <p>${klant.location.country}</p>
                     <img src="${klant.picture.large}" alt="De profielfoto van ${klant.name.first} kan niet geladen worden"/>
->>>>>>> Stashed changes
                 `;
                 elClients.appendChild(elKlant);
             });
         })
         .catch(function (error) {
-            console.error(`Error with message: ${error}`)
+            console.error(`Error with message: ${error}`);
         });
 }
