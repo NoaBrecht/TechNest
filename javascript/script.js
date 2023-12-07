@@ -121,7 +121,7 @@ if (elToetsenbord != null) {
 //* Klanten
 let elClients = document.getElementById('customers');
 if (elClients != null) {
-    fetch('https://random-data-api.com/api/v2/users?size=5&response_type=json') // 404 Error
+    fetch('https://randomuser.me/api/?results=5') // 404 Error
         .then(function (response) {
             if (response.ok) {
                 return response.json();
