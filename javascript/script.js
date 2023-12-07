@@ -134,7 +134,7 @@ if (elClients != null) {
                 let elKlant = document.createElement("article");
                 elKlant.classList.add("card");
 
-                elKlant.innerHTML = `
+                   elKlant.innerHTML = `
                     <h1>${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1>
                     <img src="${klant.picture.large}" alt="De profielfoto van ${klant.name.first} kan niet geladen worden"/>
                     <p>Email: ${klant.email}</p>
