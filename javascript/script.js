@@ -149,5 +149,12 @@ if (elClients != null) {
         })
         .catch((error) => {
             console.error(`Error with message: ${error}`);
+            let elKlant = document.createElement("article");
+            elKlant.classList.add("card", "error");
+
+            elKlant.innerHTML = `
+                <h1>Oops. Er is iets foutgegaan</h1>
+                    <p>Error with message: ${error}</p>
+            `;
         });
 }
