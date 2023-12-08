@@ -140,21 +140,21 @@ if (elClients != null) {
                 elKlant.classList.add("card");
 
                 elKlant.innerHTML = `
-                < h1 > ${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1 >
-                    <p>${klant.location.country}</p>
-                    <img src="${klant.picture.large}" alt="De profielfoto van ${klant.name.first} kan niet geladen worden"/>
+                <h1> ${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1>
+                <p>${klant.location.country}</p>
+                <img src="${klant.picture.large}" alt="De profielfoto van ${klant.name.first} kan niet geladen worden"/>
             `;
                 elClients.appendChild(elKlant);
             });
         })
         .catch((error) => {
-            console.error(`Error with message: ${error}`);
+            console.error(`Error with message: ${error} `); $
             let elKlant = document.createElement("article");
             elKlant.classList.add("card", "error");
 
             elKlant.innerHTML = `
                 <h1>Oops. Er is iets foutgegaan</h1>
-                    <p>Error with message: ${error}</p>
+                <p>Error with message: ${error}</p>
             `;
         });
 }
