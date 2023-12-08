@@ -28,6 +28,7 @@ function addToCart(productName) {
     if (!elAside) {
         elAside = document.createElement('aside');
         document.body.appendChild(elAside);
+        elAside.innerHTML = '<p id="total-price"></p>';
     }
     // Compare the product name with the JSON data
     for (let product of rootObject.products) {
@@ -38,7 +39,7 @@ function addToCart(productName) {
             } else {
                 // Create a new article element
                 let elP = document.createElement('p');
-                elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${product.price}`;
+                elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${parseFloat(product.price).toFixed(2)}`;
                 elAside.appendChild(elP);
                 // Add product to cart with quantity 1
                 cart[productName] = {
@@ -61,6 +62,11 @@ function addToCart(productName) {
             console.log(`Aantal: ${cart[productName].quantity}`);
             totalPrice += parseFloat(product.price);
             console.log(`Totaal: ${totalPrice}`);
+            // Select the total price element
+            let elTotalPrice = document.getElementById('total-price');
+
+            // Update the total price in the HTML
+            elTotalPrice.innerHTML = `Total Price: &euro;${totalPrice.toFixed(2)}`;
         }
     }
 }

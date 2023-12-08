@@ -102,11 +102,16 @@ nav ul li {
   padding: 1vh;
   cursor: pointer;
 }
-nav ul a li {
+nav ul li a {
   color: var(--text-secondary);
 }
-nav ul a li i {
+nav ul li a i {
   padding: 1vh;
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 nav ul li:hover {
   border: 2px solid var(--text-secondary);
@@ -172,6 +177,11 @@ img {
 .price {
   color: grey;
   font-size: 22px;
+}
+#total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
 }
 .card img {
   border-radius: 15%;
@@ -446,4 +456,8 @@ footer a {
 }
 .center {
   text-align: center;
+}
+
+#subject {
+  height: 200px;
 }
