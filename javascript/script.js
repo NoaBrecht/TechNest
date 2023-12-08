@@ -122,14 +122,14 @@ if (elToetsenbord != null) {
 let elClients = document.getElementById("customers");
 if (elClients != null) {
     fetch("https://randomuser.me/api/?results=5") // 404 Error
-        .then(function (response) {
+        .then((response) => {
             if (response.ok) {
                 return response.json();
             } else {
                 return Promise.reject(response.status);
             }
         })
-        .then(function (response) {
+        .then((response) => {
             response.results.forEach(function (klant) {
                 let elKlant = document.createElement("article");
                 elKlant.classList.add("card");
@@ -142,7 +142,7 @@ if (elClients != null) {
                 elClients.appendChild(elKlant);
             });
         })
-        .catch(function (error) {
+        .catch((error) => {
             console.error(`Error with message: ${error}`);
         });
 }
