@@ -39,7 +39,7 @@ function addToCart(productName) {
             } else {
                 // Create a new article element
                 let elP = document.createElement('p');
-                elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - €${parseFloat(product.price).toFixed(2)}`;
+                elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - ${parseFloat(product.price).toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
                 elAside.appendChild(elP);
                 // Add product to cart with quantity 1
                 cart[productName] = {
@@ -64,9 +64,8 @@ function addToCart(productName) {
             console.log(`Totaal: ${totalPrice}`);
             // Select the total price element
             let elTotalPrice = document.getElementById('total-price');
-
             // Update the total price in the HTML
-            elTotalPrice.innerHTML = `Total Price: &euro;${totalPrice.toFixed(2)}`;
+            elTotalPrice.innerHTML = `Total Price: ${totalPrice.toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
         }
     }
 }
@@ -141,10 +140,10 @@ if (elClients != null) {
                 elKlant.classList.add("card");
 
                 elKlant.innerHTML = `
-                    <h1>${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1>
+                < h1 > ${klant.name.title}. ${klant.name.last} ${klant.name.first}</h1 >
                     <p>${klant.location.country}</p>
                     <img src="${klant.picture.large}" alt="De profielfoto van ${klant.name.first} kan niet geladen worden"/>
-                `;
+            `;
                 elClients.appendChild(elKlant);
             });
         })
