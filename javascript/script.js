@@ -22,51 +22,62 @@ function addToWishList() {
 let cart = {};
 let totalPrice = 0;
 function addToCart(productName) {
-    console.log(`Adding ${productName} to cart`);
-    // Create an aside if there isn't already one
-    let elAside = document.querySelector('aside');
-    if (!elAside) {
-        elAside = document.createElement('aside');
-        document.body.appendChild(elAside);
-        elAside.innerHTML = '<p id="total-price"></p>';
-    }
-    // Compare the product name with the JSON data
-    for (let product of rootObject.products) {
-        if (product.name === productName) {
-            // If product is already in cart, increase quantity
-            if (cart[productName]) {
-                cart[productName].quantity += 1;
-            } else {
-                // Create a new article element
-                let elP = document.createElement('p');
-                elP.innerHTML = `<img src="${product.image}" alt="${product.name}"> ${product.name} - ${parseFloat(product.price).toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
-                elAside.appendChild(elP);
-                // Add product to cart with quantity 1
-                cart[productName] = {
-                    element: elP,
-                    price: product.price,
-                    quantity: 1
-                };
-            }
-            // Update quantity in the aside element
-            let elQuantity = cart[productName].element.querySelector('.quantity');
-            if (!elQuantity) {
-                elQuantity = document.createElement('span');
-                elQuantity.className = 'quantity';
-                cart[productName].element.appendChild(elQuantity);
-            }
-            elQuantity.textContent = ` x ${cart[productName].quantity}`;
-            console.log(`Naam: ${product.name}`);
-            console.log(`Prijs: ${cart[productName].price}`);
-            console.log(`Image: ${product.image}`);
-            console.log(`Aantal: ${cart[productName].quantity}`);
-            totalPrice += parseFloat(product.price);
-            console.log(`Totaal: ${totalPrice}`);
-            // Select the total price element
-            let elTotalPrice = document.getElementById('total-price');
-            // Update the total price in the HTML
-            elTotalPrice.innerHTML = `Total Price: ${totalPrice.toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
+    try {
+        console.log(`Trying to add ${productName} to cart`);
+        // Create an aside if there isn't already one
+        let elAside = document.querySelector('aside');
+        if (!elAside) {
+            elAside = document.createElement('aside');
+            document.body.appendChild(elAside);
+            elAside.innerHTML = '<p id="total-price"></p>';
         }
+        // Compare the product name with the JSON data
+        for (let product of rootObject.products) {
+            if (product.name === productName) {
+                // If product is already in cart, increase quantity
+                if (cart[productName]) {
+                    cart[productName].quantity += 1;
+                } else {
+                    // Create a new article element
+                    let elP = document.createElement('p');
+                    elP.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                ${product.name} - ${parseFloat(product.price).toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}
+                `;
+                    elAside.appendChild(elP);
+                    // Add product to cart with quantity 1
+                    cart[productName] = {
+                        element: elP,
+                        price: product.price,
+                        quantity: 1
+                    };
+                }
+
+                // Update quantity in the aside element
+                let elQuantity = cart[productName].element.querySelector('.quantity');
+                if (!elQuantity) {
+                    elQuantity = document.createElement('span');
+                    elQuantity.className = 'quantity';
+                    cart[productName].element.appendChild(elQuantity);
+                }
+                elQuantity.textContent = ` x ${cart[productName].quantity}`;
+                console.log(`Naam: ${product.name}`);
+                console.log(`Prijs: ${cart[productName].price}`);
+                console.log(`Image: ${product.image}`);
+                console.log(`Aantal: ${cart[productName].quantity}`);
+                totalPrice += parseFloat(product.price);
+                console.log(`Totaal: ${totalPrice}`);
+                // Select the total price element
+                let elTotalPrice = document.getElementById('total-price');
+                // Update the total price in the HTML
+                elTotalPrice.innerHTML = `Total Price: ${totalPrice.toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
+            }
+        }
+
+    }
+    catch (error) {
+        console.error(`Error with message: ${error} `);
+        console.warn(`${productName} has not been added to cart.`);
     }
 }
 let elUltrabook = document.getElementById('Ultrabook');
