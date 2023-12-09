@@ -460,3 +460,17 @@ footer a {
 #subject {
   height: 200px;
 }
+.trash {
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: var(--text-secondary);
+  background-color: var(--danger);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
