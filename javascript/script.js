@@ -6,7 +6,7 @@ if (elWishlist != null) {
 }
 function addToWishList() {
     try {
-        var element = document.getElementById("wishlist");
+        let element = document.getElementById("wishlist");
         element.classList.toggle("wishlist-active");
         if (element.classList.contains("wishlist-active")) {
             element.innerHTML = `<i class="fa-solid fa-heart text-secondary"></i> Wishlist`;
@@ -33,6 +33,27 @@ function addToCart(productName) {
             elAside = document.createElement('aside');
             document.body.appendChild(elAside);
             elAside.innerHTML = '<p id="total-price"></p>';
+
+            // Create a new button element
+            let clearCartButton = document.createElement('button');
+            clearCartButton.className = 'trash';
+            clearCartButton.innerHTML = 'Clear Cart'; // Set the text of the button
+
+            // Add an event listener to the button
+            clearCartButton.addEventListener('click', function () {
+                // Remove all products from the cart
+                cart = {};
+                // Remove all products from the aside element
+                elAside.innerHTML = '<p id="total-price"></p>';
+                // Reset the total price
+                totalPrice = 0;
+                let body = document.querySelector('body');
+
+                body.removeChild(elAside);
+            });
+
+            // Append the button to the aside element
+            elAside.appendChild(clearCartButton);
         }
         // Compare the product name with the JSON data
         for (let product of rootObject.products) {
