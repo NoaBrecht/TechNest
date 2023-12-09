@@ -21,7 +21,6 @@ function addToWishList() {
 }
 //! Einde Whishlist
 
-
 //* Winkelmandje
 let cart = {};
 let totalPrice = 0;
@@ -56,7 +55,6 @@ function addToCart(productName) {
                         quantity: 1
                     };
                 }
-
                 // Update quantity in the aside element
                 let elQuantity = cart[productName].element.querySelector('.quantity');
                 if (!elQuantity) {
@@ -166,7 +164,6 @@ if (elClients != null) {
             console.error(`Error with message: ${error} `); $
             let elKlant = document.createElement("article");
             elKlant.classList.add("card", "error");
-
             elKlant.innerHTML = `
                 <h1>Oops. Er is iets foutgegaan</h1>
                 <p>Error with message: ${error}</p>
