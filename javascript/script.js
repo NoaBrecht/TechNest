@@ -33,7 +33,6 @@ function addToCart(productName) {
             elAside = document.createElement('aside');
             document.body.appendChild(elAside);
             elAside.innerHTML = '<p id="total-price"></p>';
-
             // Create a new button element
             let clearCartButton = document.createElement('button');
             clearCartButton.className = 'trash';
@@ -48,10 +47,8 @@ function addToCart(productName) {
                 // Reset the total price
                 totalPrice = 0;
                 let body = document.querySelector('body');
-
                 body.removeChild(elAside);
             });
-
             // Append the button to the aside element
             elAside.appendChild(clearCartButton);
         }
@@ -96,7 +93,6 @@ function addToCart(productName) {
                 elTotalPrice.innerHTML = `Total Price: ${totalPrice.toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
             }
         }
-
     }
     catch (error) {
         console.error(`Error with message: ${error} `);
