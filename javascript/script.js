@@ -156,7 +156,7 @@ if (elToetsenbord != null) {
 //* Klanten
 let elClients = document.getElementById("customers");
 if (elClients != null) {
-    fetch("https://randomuser.me/api/?results=5") // 404 Error
+    fetch("https://randomuser.me/api/?results=5")
         .then((response) => {
             if (response.ok) {
                 return response.json();
