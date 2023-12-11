@@ -36,9 +36,7 @@ function addToCart(productName) {
             // Create a new button element
             let clearCartButton = document.createElement('button');
             clearCartButton.className = 'trash';
-            clearCartButton.innerHTML = 'Clear Cart'; // Set the text of the button
-
-            // Add an event listener to the button
+            clearCartButton.innerHTML = 'Clear Cart';
             clearCartButton.addEventListener('click', function () {
                 // Remove all products from the cart
                 cart = {};
@@ -59,7 +57,6 @@ function addToCart(productName) {
                 if (cart[productName]) {
                     cart[productName].quantity += 1;
                 } else {
-                    // Create a new article element
                     let elP = document.createElement('p');
                     elP.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
@@ -72,6 +69,14 @@ function addToCart(productName) {
                         price: product.price,
                         quantity: 1
                     };
+                    let removeProductButton = document.createElement('button');
+                    removeProductButton.innerHTML = 'Remove'; // Set the text of the button
+                    removeProductButton.className = 'trash';
+                    removeProductButton.addEventListener('click', function () {
+                        removeFromCart(productName);
+                    });
+                    // Append the button to the product element
+                    elP.appendChild(removeProductButton);
                 }
                 // Update quantity in the aside element
                 let elQuantity = cart[productName].element.querySelector('.quantity');
@@ -80,7 +85,7 @@ function addToCart(productName) {
                     elQuantity.className = 'quantity';
                     cart[productName].element.appendChild(elQuantity);
                 }
-                elQuantity.textContent = ` x ${cart[productName].quantity}`;
+                elQuantity.innerHTML = ` x ${cart[productName].quantity}`;
                 console.log(`Naam: ${product.name}`);
                 console.log(`Prijs: ${cart[productName].price}`);
                 console.log(`Image: ${product.image}`);
@@ -150,6 +155,35 @@ if (elMuismat != null) {
 let elToetsenbord = document.getElementById('Toetsenbord');
 if (elToetsenbord != null) {
     elToetsenbord.addEventListener('click', () => addToCart("TechMaster Pro Mechanische Toetsenbord"), false);
+}
+function removeFromCart(productName) {
+    console.log(`Trying to remove ${productName} from cart`);
+    try {
+        for (let product of rootObject.products) {
+            if (product.name === productName) {
+                cart[productName].quantity -= 1;
+                if (cart[productName].quantity < 1) {
+                    // Get the aside element
+                    let elAside = document.querySelector('aside');
+                    // Remove the product element from the aside
+                    elAside.removeChild(cart[productName].element);
+                    // Remove the product from the cart
+                    delete cart[productName];
+                } else {
+                    let elQuantity = cart[productName].element.querySelector('.quantity');
+                    elQuantity.innerHTML = ` x ${cart[productName].quantity}`;
+                }
+                totalPrice -= parseFloat(product.price);
+                console.log(`Totaal: ${totalPrice}`);
+                // Select the total price element
+                let elTotalPrice = document.getElementById('total-price');
+                // Update the total price in the HTML
+                elTotalPrice.innerHTML = `Total Price: ${totalPrice.toLocaleString('nl-BE', { style: "currency", currency: "EUR" })}`;
+            }
+        }
+    } catch (error) {
+        console.error(`Error with message: ${error}`);
+    }
 }
 //! Einde Winkelmandje
 
